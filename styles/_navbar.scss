@@ -1,0 +1,134 @@
+.top-nav {
+  display: flex;
+  flex: 1;
+  gap: 30rem;
+  top: 0;
+  position: relative;
+  font-size: 0.9rem;
+  width: 100%;
+  max-width: 100%;
+  padding: 1rem 0;
+  align-items: center;
+  justify-content: center;
+  color: $black;
+  background-color: $primary;
+  overflow: hidden;
+
+  // @media (max-width: 1366px) {
+  //   max-width: 100%;
+  // }
+
+  .flex-works {
+    li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    ul {
+      font-size: 1rem;
+      align-items: center;
+      gap: 1rem;
+      display: flex;
+      list-style: none;
+      h1 {
+        max-width: 100px;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        font-weight: 600;
+      }
+
+      .search-btn {
+        color: $black;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.4rem 1.3rem;
+        align-items: center;
+        background-color: $main-color;
+        border-radius: 10px;
+        input {
+          border: none; /* This removes the border when the input is focused */
+          outline: none; /* This removes the outline when the input is focused */
+        }
+        ::placeholder {
+          color: $primary; /* This changes the color of the placeholder text! */
+        }
+
+        .icon {
+          font-size: 1.5rem;
+          color: $primary;
+          padding: 0;
+          font-weight: 700px;
+        }
+
+        input.search-field {
+          border: none;
+        }
+        .search-field {
+          max-width: 150px;
+          border: none;
+          background-color: transparent;
+          color: $primary;
+          padding: 0.2rem;
+        }
+      }
+    }
+  }
+  .social-media {
+    align-items: center;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    gap: 30px;
+    color: $black;
+    .icon2 {
+      font-size: 1.5rem;
+    }
+    .pay-now {
+      color: $primary;
+      align-items: center;
+      padding: 0.4rem 1.3rem;
+      background-color: $main-color;
+      display: flex;
+      gap: 1rem;
+      border-radius: 10px;
+      width: 150px;
+
+      .icon2 {
+        font-size: 1.5rem;
+      }
+    }
+    .pay-now:hover {
+      background-color: transparent;
+      border: 2px solid $main-color;
+      color: $black;
+    }
+  }
+}
+
+.down-navbar {
+  color: $primary;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%;
+  background: $main-color;
+  padding: 1rem;
+  ul{
+   display: flex; 
+   gap: 6rem;
+   justify-content: center;
+
+  }
+
+  // .main-links {
+  //   font-weight: 700;
+  //   font-size: 1.15rem;
+  //   ul a {
+  //     padding: 0 2rem 0 2rem;
+  //     &:hover {
+  //       color: $primary;
+  //     }
+  //   }
+  // }
+}
