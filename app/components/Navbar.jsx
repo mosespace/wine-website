@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import { AiOutlineMenu } from "react-icons/ai";
 import { BsCart3, BsPaypal, BsSearch, BsTelephoneFill } from "react-icons/bs";
 
 function Navbar() {
@@ -34,19 +35,22 @@ function Navbar() {
             Pay Now
           </a>
         </div>
+        <div className='humberg'>
+          <AiOutlineMenu size={30} />
+        </div>
       </div>
 
-      <div className="down-navbar">
-        <Link href="#">
-            <ul>
-                <li>Whiskey</li>
-                <li>Spirit</li>
-                <li>Champegane & Sparkling</li>
-                <li>Wine</li>
-                <li>Liqueurs</li>
-                <li>Beer and Cider</li>
-                <li>Mixers & Soft Drinks</li>
-            </ul>
+      <div className='down-navbar'>
+        <Link href='#'>
+          <ul>
+            <li>Whiskey</li>
+            <li>Spirit</li>
+            <li>Champegane & Sparkling</li>
+            <li>Wine</li>
+            <li>Liqueurs</li>
+            <li>Beer and Cider</li>
+            <li>Mixers & Soft Drinks</li>
+          </ul>
         </Link>
       </div>
     </>
