@@ -4,7 +4,7 @@
   gap: 30rem;
   top: 0;
   position: relative;
-  font-size: 0.9rem;
+  // font-size: 0.9rem;
   width: 100%;
   max-width: 100%;
   padding: 1rem 0;
@@ -13,10 +13,6 @@
   color: $black;
   background-color: $primary;
   overflow: hidden;
-
-  // @media (max-width: 1366px) {
-  //   max-width: 100%;
-  // }
 
   .flex-works {
     li {
@@ -105,6 +101,184 @@
       color: $black;
     }
   }
+
+  .humberg {
+    display: none;
+  }
+}
+
+//  Media Queries For The TopNavBar
+@media screen and (max-width: 1276px) {
+  .top-nav {
+    flex: 0;
+    gap: 20rem;
+    max-width: 1276px;
+
+    .flex-works {
+      ul {
+        h1 {
+          max-width: 130px;
+          font-size: 1.5rem;
+        }
+
+        .search-btn {
+          gap: 0.2rem;
+          padding: 0.4rem 1rem;
+          .icon {
+            font-size: 1rem;
+            font-weight: 800px;
+          }
+        }
+      }
+    }
+
+    .social-media {
+      font-size: 1rem;
+      gap: 20px;
+      .icon2 {
+        font-size: 1.3rem;
+      }
+      .pay-now {
+        .icon2 {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1040px) {
+    .top-nav {
+      gap: 10rem;
+      max-width: 1040px;
+
+      .flex-works {
+        ul {
+          h1 {
+            max-width: 130px;
+            font-size: 1.5rem;
+          }
+
+          .search-btn {
+            padding: 0.2rem 0.7rem;
+            .icon {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+
+      .social-media {
+        font-weight: 600;
+        font-size: 13.5px;
+        gap: 20px;
+        .icon2 {
+          font-size: 1.3rem;
+        }
+        .pay-now {
+          padding: 0.4rem 1.4rem;
+          .icon2 {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 866px) {
+    .top-nav {
+      gap: 5rem;
+      max-width: 866px;
+
+      .flex-works {
+        ul {
+          h1 {
+            max-width: 150px;
+            font-size: 1.5rem;
+          }
+
+          .search-btn {
+            padding: 0.2rem 0.5rem;
+            .icon {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .top-nav {
+      gap: 25rem;
+      max-width: 768px;
+
+      .flex-works {
+        ul {
+          li {
+            display: none;
+          }
+          h1 {
+            max-width: 150px;
+            font-size: 1.5rem;
+          }
+
+          .search-btn {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 668px) {
+    .top-nav {
+      gap: 30rem;
+      max-width: 668px;
+
+      .social-media {
+        display: none;
+      }
+      .humberg {
+        display: block;
+      }
+    }
+  }
+  @media screen and (max-width: 568px) {
+    .top-nav {
+      gap: 25rem;
+      max-width: 568px;
+
+      .social-media {
+        display: none;
+      }
+      .humberg {
+        display: block;
+      }
+    }
+  }
+  @media screen and (max-width: 568px) {
+    .top-nav {
+      gap: 25rem;
+      max-width: 568px;
+
+      .social-media {
+        display: none;
+      }
+      .humberg {
+        display: block;
+      }
+    }
+  }
+  @media screen and (max-width: 468px) {
+    .top-nav {
+      gap: 20rem;
+      max-width: 468px;
+
+      .social-media {
+        display: none;
+      }
+      .humberg {
+        display: block;
+      }
+    }
+  }
 }
 
 .down-navbar {
@@ -114,21 +288,62 @@
   min-width: 100%;
   background: $main-color;
   padding: 1rem;
-  ul{
-   display: flex; 
-   gap: 6rem;
-   justify-content: center;
-
+  ul {
+    display: flex;
+    gap: 6rem;
+    justify-content: center;
   }
+}
 
-  // .main-links {
-  //   font-weight: 700;
-  //   font-size: 1.15rem;
-  //   ul a {
-  //     padding: 0 2rem 0 2rem;
-  //     &:hover {
-  //       color: $primary;
-  //     }
-  //   }
-  // }
+//  Media Queries For The TopNavBar
+@media screen and (max-width: 1232px) {
+  .down-navbar {
+    max-width: 1232px;
+    padding: 0.8rem;
+    ul {
+      gap: 4rem;
+    }
+  }
+  @media screen and (max-width: 1040px) {
+    .down-navbar {
+      max-width: 1040px;
+      padding: 0.8rem;
+      ul {
+        gap: 2.5rem;
+      }
+    }
+  }
+  @media screen and (max-width: 852px) {
+    .down-navbar {
+      max-width: 852px;
+      ul {
+        gap: 2rem;
+      }
+    }
+  }
+  @media screen and (max-width: 898px) {
+    .down-navbar {
+      max-width: 898px;
+      padding: 0.8rem;
+      ul {
+        gap: 1.5rem;
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .down-navbar {
+      max-width: 768px;
+      padding: 0.8rem;
+      ul {
+        gap: 1rem;
+      }
+    }
+  }
+  @media screen and (max-width: 668px) {
+    .down-navbar {
+      display: none;
+      max-width: 668px;
+      padding: 0.8rem;
+    }
+  }
 }
