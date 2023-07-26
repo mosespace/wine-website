@@ -1,0 +1,75 @@
+.trending-section {
+  color: black;
+  background-color: #d6d6d6;
+
+  h1 {
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .trending-grid {
+    display: grid;
+    gap: 1rem;
+
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+
+    .card {
+      padding: 2rem;
+      border-radius: 10px;
+      justify-content: center;
+      align-items: center;
+      background-color: $primary;
+      .upper-icons {
+        gap: 9rem;
+        display: flex;
+        align-items: center;
+
+        .span-class {
+          font-size: 0.7rem;
+          display: flex;
+          gap: 0.3rem;
+          span {
+            color: $primary;
+            font-weight: 600;
+            border-radius: 5px;
+            padding: 0.1rem 0.3rem;
+            background-color: #6e2dd6;
+          }
+          .percentage {
+            // font-size: 1.1rem;
+            background-color: red;
+          }
+        }
+      }
+
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .button-component {
+        align-items: center;
+        display: flex;
+        padding-top: 1rem;
+        gap: 7rem;
+
+        a {
+          color: $primary;
+          display: flex;
+          gap: 0.6rem;
+          align-items: center;
+          padding: 0.2rem 1rem;
+          border-radius: 5px;
+          background-color: $main-color;
+        }
+      }
+    }
+  }
+}
