@@ -108,8 +108,9 @@
 }
 
 //  Media Queries For The TopNavBar
-@media screen and (max-width: 1276px) {
+@media screen and (max-width: 1399.98px) {
   .top-nav {
+    max-width: 1399.98px;
     flex: 0;
     gap: 20rem;
     max-width: 1276px;
@@ -146,10 +147,10 @@
     }
   }
 
-  @media screen and (max-width: 1040px) {
+  @media screen and (max-width: 1199.98px) {
     .top-nav {
       gap: 10rem;
-      max-width: 1040px;
+      max-width: 1199.98px;
 
       .flex-works {
         ul {
@@ -183,32 +184,29 @@
       }
     }
   }
-  @media screen and (max-width: 866px) {
+
+  @media screen and (max-width: 991.98px) {
     .top-nav {
-      gap: 5rem;
-      max-width: 866px;
+      gap: 30rem;
+      max-width: 991.98px;
 
       .flex-works {
         ul {
-          h1 {
-            max-width: 150px;
-            font-size: 1.5rem;
+          li {
+            display: none;
           }
 
           .search-btn {
-            padding: 0.2rem 0.5rem;
-            .icon {
-              font-size: 1rem;
-            }
+            display: none;
           }
         }
       }
     }
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767.98px) {
     .top-nav {
-      gap: 25rem;
-      max-width: 768px;
+      gap: 20rem;
+      max-width: 767.98px;
 
       .flex-works {
         ul {
@@ -225,57 +223,73 @@
           }
         }
       }
+      // .social-media {
+      //   display: none;
+      // }
+      // .humberg {
+      //   display: block;
+      // }
     }
   }
-  @media screen and (max-width: 668px) {
+  @media screen and (max-width: 575.98px) {
     .top-nav {
-      gap: 30rem;
-      max-width: 668px;
+      gap: 15rem;
+      max-width: 575.98px;
 
-      .social-media {
-        display: none;
-      }
-      .humberg {
-        display: block;
-      }
-    }
-  }
-  @media screen and (max-width: 568px) {
-    .top-nav {
-      gap: 25rem;
-      max-width: 568px;
+      .flex-works {
+        ul {
+          li {
+            display: none;
+          }
+          h1 {
+            max-width: 150px;
+            font-size: 1.5rem;
+          }
 
-      .social-media {
-        display: none;
+          .search-btn {
+            display: none;
+          }
+        }
       }
-      .humberg {
-        display: block;
-      }
-    }
-  }
-  @media screen and (max-width: 568px) {
-    .top-nav {
-      gap: 25rem;
-      max-width: 568px;
-
-      .social-media {
-        display: none;
-      }
-      .humberg {
-        display: block;
-      }
+      // .social-media {
+      //   display: none;
+      // }
+      // .humberg {
+      //   display: block;
+      // }
     }
   }
   @media screen and (max-width: 468px) {
     .top-nav {
-      gap: 20rem;
+      gap: 6rem;
       max-width: 468px;
 
-      .social-media {
-        display: none;
+      .flex-works {
+        ul {
+          li {
+            display: none;
+          }
+          .search-btn {
+            display: none;
+          }
+        }
       }
-      .humberg {
-        display: block;
+    }
+  }
+  @media screen and (max-width: 381px) {
+    .top-nav {
+      gap: 4.2rem;
+      max-width: 468px;
+
+      .flex-works {
+        ul {
+          li {
+            display: none;
+          }
+          .search-btn {
+            display: none;
+          }
+        }
       }
     }
   }
@@ -296,26 +310,26 @@
 }
 
 //  Media Queries For The TopNavBar
-@media screen and (max-width: 1232px) {
+@media screen and (max-width: 1399.98px) {
   .down-navbar {
-    max-width: 1232px;
+    max-width: 1399.98px;
     padding: 0.8rem;
     ul {
       gap: 4rem;
     }
   }
-  @media screen and (max-width: 1040px) {
+  @media screen and (max-width: 1199.98px) {
     .down-navbar {
-      max-width: 1040px;
+      max-width: 1199.98px;
       padding: 0.8rem;
       ul {
         gap: 2.5rem;
       }
     }
   }
-  @media screen and (max-width: 852px) {
+  @media screen and (max-width: 991.98px) {
     .down-navbar {
-      max-width: 852px;
+      max-width: 991.98px;
       ul {
         gap: 2rem;
       }
