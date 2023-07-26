@@ -1,0 +1,35 @@
+.mobo-nav {
+  display: none;
+}
+
+@media screen and (max-width: 575.98px) {
+  .mobo-nav {
+    max-width: 575.98px;
+    color: $primary;
+    width: 100%;
+    display: block;
+    position: fixed;
+    padding: 1.5rem 1rem;
+    background-color: teal;
+    position: fixed;
+    z-index: 230;
+    bottom: 0;
+
+    .icons a {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      gap: 6rem;
+      font-size: 1.5rem;
+    }
+  }
+  @media screen and (max-width: 468px) {
+    .mobo-nav {
+      padding: 1.5rem 1.3rem;
+      .icons a {
+        gap: 3.5rem;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
