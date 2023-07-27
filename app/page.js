@@ -17,7 +17,7 @@ export default function Home() {
       <CategoryListing />
 
       {/* Tranding Today */}
-      {/* <Trending /> */}
+      <Trending />
 
       {/* FAQs */}
       <Faq />
