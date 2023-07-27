@@ -1,0 +1,54 @@
+section {
+  color: black;
+  background-color: #d6d6d6;
+
+  .call-to-action-grid {
+    gap: 1rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+
+    .grid-1,
+    .grid-2,
+    .grid-3 {
+      padding: 2rem;
+      align-content: center;
+      background-color: $primary;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .icon {
+        color: $main-color;
+        font-size: 2rem;
+        padding: 1rem;
+        border-radius: 50px;
+        background-color: rgba($main-color, 0.4);
+      }
+      .icon-two {
+        color: $main-sub-color;
+        font-size: 2rem;
+        padding: 1rem;
+        border-radius: 50px;
+        background-color: rgba($main-sub-color, 0.4);
+      }
+      .icon-three {
+        color: $mobile-nav;
+        font-size: 2rem;
+        padding: 1rem;
+        border-radius: 50px;
+        background-color: rgba($mobile-nav, 0.4);
+      }
+
+      h1 {
+        padding-top: 1rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+    }
+  }
+}
