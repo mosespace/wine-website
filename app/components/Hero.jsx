@@ -1,6 +1,8 @@
 "use client";
 import Image from "next/image";
-import Slider from "../../public/images/bg1.jpg";
+import Slider from "../../public/images/bg3.jpg";
+import Slider2 from "../../public/images/bg2.jpg";
+import Slider3 from "../../public/images/bg1.jpg";
 import React, { useRef, useState } from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -8,7 +10,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import { Autoplay, Pagination, Navigation, FreeMode } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 export default function Hero() {
   return (
@@ -31,6 +33,7 @@ export default function Hero() {
             }}
             pagination={{
               clickable: true,
+              type: "progressbar",
             }}
             navigation={true}
             modules={[Autoplay, Pagination, Navigation]}
@@ -40,7 +43,10 @@ export default function Hero() {
               <Image src={Slider} alt='This is a trial image' fill />
             </SwiperSlide>
             <SwiperSlide>
-              <Image src={Slider} alt='This is a trial image' fill />
+              <Image src={Slider2} alt='This is a trial image' fill />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={Slider3} alt='This is a trial image' fill />
             </SwiperSlide>
           </Swiper>
         </div>
