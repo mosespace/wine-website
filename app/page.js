@@ -11,7 +11,7 @@ export default function Home() {
     <main className='navbar-section'>
       {/* HERO COMPONENT */}
       <Hero />
-      <MobileNav />
+      {/* <MobileNav /> */}
 
       {/* CATEGORY  LISTING */}
       <CategoryListing />
@@ -21,8 +21,9 @@ export default function Home() {
 
       {/* FAQs */}
       <Faq />
+
       {/* Call To Action */}
-      {/* <CallToAction /> */}
+      <CallToAction />
 
       {/* FOoter Section */}
       {/* <Footer /> */}
