@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main className='navbar-section'>
       {/* HERO COMPONENT */}
-      {/* <Hero /> */}
+      <Hero />
       <MobileNav />
 
       {/* CATEGORY  LISTING */}
