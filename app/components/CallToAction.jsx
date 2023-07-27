@@ -8,7 +8,7 @@ export default function CallToAction() {
     <section>
       <div className='call-to-action'></div>
       <div className='call-to-action-grid'>
-      <div className='grid-1'>
+        <div className='grid-1'>
           <div className='icon'>
             <MdShareLocation />
           </div>
@@ -22,13 +22,13 @@ export default function CallToAction() {
           <h1>Free Delivery</h1>
           <p>When Order From Kampala</p>
         </div>
-        
+
         <div className='grid-3'>
           <div className='icon-three'>
             <RiCustomerService2Fill />
           </div>
-          <h1>More than just Customer Care</h1>
-          <p>We got you sorted always 24/7</p>
+          <h1>Customer Care</h1>
+          <p>Always active 24/7</p>
         </div>
       </div>
     </section>
