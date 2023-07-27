@@ -5,24 +5,30 @@ section {
     min-height: 60vh;
     display: flex;
     border-radius: 10px;
-    background-color: $brown;
-
+    .swiper-button-prev {
+      z-index: 300;
+    }
     .hero-text {
+      background-color: $primary;
+      height: 60vh;
       padding: 2rem 3rem;
+      z-index: 230;
+      position: absolute;
       display: flex;
       justify-content: center;
       flex-direction: column;
       gap: 2rem;
-      min-width: 40%;
+      min-width: 60%;
+      clip-path: polygon(0 0, 100% 0, 62% 100%, 0 100%, 0% 50%);
       overflow: hidden;
       .logo {
         font-weight: 600;
         color: $main-color;
       }
       h1 {
-        font-size: 2.8rem;
+        font-size: 3.3rem;
         font-weight: 700;
-        max-width: 500px;
+        max-width: 600px;
         padding: 2rem 0;
       }
       .read-more {
@@ -36,7 +42,7 @@ section {
       position: relative;
       object-fit: cover;
       overflow: hidden;
-      min-width: 60%;
+      min-width: 100%;
 
       img {
         width: 100%;
@@ -67,75 +73,96 @@ section {
   }
 }
 
-//  Media Queries For The Whole Section
-@media screen and (max-width: 768px) {
-  section {
-    padding: 0;
-    .hero-section {
-      max-width: 768px;
-      min-height: 70vh;
-      border-radius: 0;
-      // background-color: green;
 
-      .hero-text {
-        padding: 2rem 3rem;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        gap: 0;
-        min-width: 40%;
-        overflow: hidden;
-        .logo {
-          font-weight: 600;
-          color: $main-color;
-        }
-        h1 {
-          font-size: 2rem;
-          font-weight: 700;
-          max-width: 300px;
-          padding: 2rem 0;
-        }
-        .read-more {
-          align-items: center;
-          display: flex;
-          gap: 0.2rem;
-        }
-      }
-
-      .hero-slider {
-        position: relative;
-        object-fit: cover;
-        overflow: hidden;
-        min-width: auto;
-
-        img {
-          width: 100%;
-          height: 100%;
-          border-radius: 0;
-        }
-
-        .swiper {
-          min-width: 100%;
-          height: 100%;
-        }
-
-        .swiper-slide {
-          width: 100%;
-          text-align: center;
-
-          /* Center slide text vertically */
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        .swiper-slide img {
-          position: relative;
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
+@media screen and (max-width: 1399.98px) {
+  @media screen and (max-width: 1199.98px) {
+    section {
+      max-width: 1199.98px;
+      .hero-section {
+        .hero-text {
+          min-width: 50%;
+          .logo {
+            font-size: 2rem;
+          }
+          h1 {
+            font-size: 2.8rem;
+            max-width: 400px;
+            padding: 1.5rem 0;
+          }
         }
       }
     }
   }
+
+  @media screen and (max-width: 991.98px) {
+    section {
+      max-width: 991.98px;
+      .hero-section {
+        .hero-text {
+          h1 {
+            font-size: 2.3rem;
+            max-width: 300px;
+            padding: 2rem 0;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 767.98px) {
+    section {
+      max-width: 767.98px;
+      .hero-section {
+        .hero-text {
+          min-width: 60%;
+          h1 {
+            font-size: 2.2rem;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 575.98px) {
+    section {
+      max-width: 575.98px;
+      padding: 2rem 2rem;
+      .hero-section {
+        .hero-text {
+          gap: 1rem;
+          min-width: 35%;
+
+          h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+          }
+          .read-more {
+            align-items: center;
+            display: flex;
+            gap: 0.2rem;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 468.98px) {
+    section {
+      max-width: 575.98px;
+      padding: 2rem 2rem;
+      .hero-section {
+        .hero-text {
+          padding: 2rem 2rem;
+          gap: 1rem;
+          min-width: 60%;
+
+          h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            max-width: 100px;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 381px) {
+  }
 }
+
