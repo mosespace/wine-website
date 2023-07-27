@@ -8,13 +8,23 @@ export default function MobileNav() {
   return (
     <div className='mobo-nav'>
       <div className='icons'>
-        <Link href='#'>
-          <HiHome />
-          <FaList />
-          <HiOutlineShoppingCart />
-          <HiOutlineSearch />
-          <LuMoreHorizontal />
-        </Link>
+        <ul>
+          <li>
+            <HiHome />
+          </li>
+          <li>
+            <FaList />
+          </li>
+          <li>
+            <HiOutlineShoppingCart />
+          </li>
+          <li>
+            <HiOutlineSearch />
+          </li>
+          <li>
+            <LuMoreHorizontal />
+          </li>
+        </ul>
       </div>
     </div>
   );
