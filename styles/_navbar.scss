@@ -303,6 +303,12 @@
     display: flex;
     gap: 6rem;
     justify-content: center;
+    li {
+      cursor: pointer;
+      &:hover {
+        color: black;
+      }
+    }
   }
 }
 
