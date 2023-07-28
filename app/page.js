@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Hero from "./components/Hero";
 import CategoryListing from "./components/CategoryListing";
 import Trending from "./components/Trending";
