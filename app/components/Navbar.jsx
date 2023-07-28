@@ -4,6 +4,36 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { BsCart3, BsPaypal, BsSearch, BsTelephoneFill } from "react-icons/bs";
 
 function Navbar() {
+  const navLinks = [
+    {
+      name: "Whiskey",
+      path: "/whiskey",
+    },
+    {
+      name: "Spirit",
+      path: "/spirit",
+    },
+    {
+      name: "Champegane & Sparkling",
+      path: "/champegane-&-Sparkling",
+    },
+    {
+      name: "Wine",
+      path: "/wine",
+    },
+    {
+      name: "Liqueurs",
+      path: "/liqueurs",
+    },
+    {
+      name: "Beer and Cider",
+      path: "/beer-and-cider",
+    },
+    {
+      name: "Mixers & Soft Drinks",
+      path: "/mixers-&-soft-drinks",
+    },
+  ];
   return (
     <>
       <div className='top-nav'>
@@ -41,17 +71,15 @@ function Navbar() {
       </div>
 
       <div className='down-navbar'>
-        <Link href='#'>
-          <ul>
-            <li>Whiskey</li>
-            <li>Spirit</li>
-            <li>Champegane & Sparkling</li>
-            <li>Wine</li>
-            <li>Liqueurs</li>
-            <li>Beer and Cider</li>
-            <li>Mixers & Soft Drinks</li>
-          </ul>
-        </Link>
+        <ul>
+          {navLinks.map((link, i) => {
+            return (
+              <li key={i} href={link.path}>
+                {link.name}
+              </li>
+            );
+          })}
+        </ul>
       </div>
     </>
   );
