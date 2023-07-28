@@ -1,0 +1,28 @@
+section {
+  background-color: #d6d6d6;
+  .question {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 2rem;
+    color: black;
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      &:after {
+        content: " ";
+        display: block;
+        border: 2px solid $main-color;
+        width: 15%;
+      }
+    }
+
+    .line-clamp {
+      padding-top: 0.5rem;
+      max-width: 1430px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+}
