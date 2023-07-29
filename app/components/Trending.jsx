@@ -18,21 +18,19 @@ export default function Trending({ title, bg, data }) {
                   <span className='percentage'>-5%</span>
                   <span>NEW</span>
                 </div>
-                <AiOutlineHeart size={25} />
+                <AiOutlineHeart className="heart" size={25} />
               </div>
               <div className='image'>
                 <Image
-                  src={product.Thumbnail}
-                  alt='the alt tag goes here'
-                  width={50}
-                  height={50}
+                  src={product.image}
+                  alt={product.slug}
+                  fill
                 />
-                
               </div>
               <h2>{product.title}</h2>
-              <p>{product.short_description}</p>
+              <p>{product.brief_description}</p>
               <div className='button-component'>
-                <h3>{product.CurrentPrice}</h3>
+                <h3>{product.current_price}</h3>
                 <a href='#'>
                   <AiOutlineShoppingCart />
                   Buy
