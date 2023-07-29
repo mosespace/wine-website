@@ -1,6 +1,6 @@
 import Hero from "./components/Hero";
 import CategoryListing from "./components/CategoryListing";
-import Trending from "./components/Trending";
+import Products from "./components/Products";
 import MobileNav from "./components/MobileNav";
 import Faq from "./components/Faq";
 import CallToAction from "./components/CallToAction";
@@ -36,11 +36,10 @@ export default async function Home() {
       {/* CATEGORY  LISTING */}
       <CategoryListing data={categories} />
 
-      {/* Tranding Today */}
-      <Trending title='Trending Wines' bg='#fca5a5' data={featuredProducts} />
-
-      <Trending title='Spirits' bg='#99f6e4' data={allSpirits} />
-      <Trending title='Wedding wines' bg='#a8a29e' data={allWeddingWines} />
+      {/* All Products */}
+      <Products title='Trending Wines' bg='#fca5a5' data={featuredProducts} />
+      <Products title='Spirits' bg='#99f6e4' data={allSpirits} />
+      <Products title='Wedding wines' bg='#a8a29e' data={allWeddingWines} />
 
       {/* FAQs */}
       <Faq />
