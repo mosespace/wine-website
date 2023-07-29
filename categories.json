@@ -1,59 +1,58 @@
 [
-    {
-      "id": 1,
-      "title": "Whiskey",
-      "description": "A distilled alcoholic beverage made from fermented grain mash.",
-      "image": "whiskey.jpg",
-      "keywords": ["whiskey", "whisky", "bourbon"]
-    },
-    {
-      "id": 2,
-      "title": "Spirit",
-      "description": "Various distilled alcoholic beverages.",
-      "image": "spirit.jpg",
-      "keywords": ["spirits", "alcohol"]
-    },
-    {
-      "id": 3,
-      "title": "Champagne & Sparkling",
-      "description": "Elegant sparkling wines, including champagne.",
-      "image": "champagne.jpg",
-      "keywords": ["champagne", "sparkling wine", "bubbly"]
-    },
-    {
-      "id": 4,
-      "title": "Wines",
-      "description": "An alcoholic beverage made from fermented grapes or other fruits.",
-      "image": "wines.jpg",
-      "keywords": ["wine", "red wine", "white wine"]
-    },
-    {
-      "id": 5,
-      "title": "Liqueurs",
-      "description": "Sweet alcoholic beverages flavored with various ingredients.",
-      "image": "liqueurs.jpg",
-      "keywords": ["liqueur", "flavored spirits"]
-    },
-    {
-      "id": 6,
-      "title": "Beer and Cider",
-      "description": "Fermented alcoholic beverages made from grains or fruits.",
-      "image": "beer_cider.jpg",
-      "keywords": ["beer", "cider", "ale", "lager"]
-    },
-    {
-      "id": 7,
-      "title": "Mixers & Soft Drinks",
-      "description": "Non-alcoholic beverages used in cocktails and for mixing with spirits.",
-      "image": "mixers_soft_drinks.jpg",
-      "keywords": ["mixers", "soft drinks", "soda", "tonic water"]
-    },
-    {
-      "id": 8,
-      "title": "Wedding wines",
-      "description": "Specially selected wines for weddings and special occasions.",
-      "image": "wedding_wines.jpg",
-      "keywords": ["wedding wines", "celebration wines"]
-    }
-  ]
-  
+  {
+    "id": 1,
+    "title": "Whiskey",
+    "description": "A distilled alcoholic beverage made from fermented grain mash.",
+    "image": "/images/Whiskey.png",
+    "keywords": ["whiskey", "whisky", "bourbon"]
+  },
+  {
+    "id": 2,
+    "title": "Spirit",
+    "description": "Various distilled alcoholic beverages.",
+    "image": "/images/Spirits.png",
+    "keywords": ["spirits", "alcohol"]
+  },
+  {
+    "id": 3,
+    "title": "Champagne & Sparkling",
+    "description": "Elegant sparkling wines, including champagne.",
+    "image": "/images/Champagane.png",
+    "keywords": ["champagne", "sparkling wine", "bubbly"]
+  },
+  {
+    "id": 4,
+    "title": "Wines",
+    "description": "An alcoholic beverage made from fermented grapes or other fruits.",
+    "image": "/images/Wine.png",
+    "keywords": ["wine", "red wine", "white wine"]
+  },
+  {
+    "id": 5,
+    "title": "Liqueurs",
+    "description": "Sweet alcoholic beverages flavored with various ingredients.",
+    "image": "/images/liquer.png",
+    "keywords": ["liqueur", "flavored spirits"]
+  },
+  {
+    "id": 6,
+    "title": "Beer and Cider",
+    "description": "Fermented alcoholic beverages made from grains or fruits.",
+    "image": "/images/Spirits.png",
+    "keywords": ["beer", "cider", "ale", "lager"]
+  },
+  {
+    "id": 7,
+    "title": "Mixers & Soft Drinks",
+    "description": "Non-alcoholic beverages used in cocktails and for mixing with spirits.",
+    "image": "/images/Spirits.png",
+    "keywords": ["mixers", "soft drinks", "soda", "tonic water"]
+  },
+  {
+    "id": 8,
+    "title": "Wedding wines",
+    "description": "Specially selected wines for weddings and special occasions.",
+    "image": "/images/Spirits.png",
+    "keywords": ["wedding wines", "celebration wines"]
+  }
+]
