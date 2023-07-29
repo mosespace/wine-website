@@ -6,15 +6,27 @@ import Faq from "./components/Faq";
 import CallToAction from "./components/CallToAction";
 import Footer from "./components/Footer";
 import { getProducts } from "./api/products/route";
+import { getCategories } from "./api/categories/route";
 
 export default async function Home() {
+  const categories = await getCategories();
+  // console.log(categories);
+
   const products = await getProducts();
   // console.log(products);
 
   const featuredProducts = products.filter(
-    (product) => product.IsFeatured == true
+    (product) => product.isFeatured == true
   );
+
   // console.log(featuredProducts);
+  const allSpirits = products.filter((product) => product.category_id == 2);
+  // console.log(spirits);
+
+  const allWeddingWines = products.filter(
+    (product) => product.category_id == 8
+  );
+
   return (
     <main className='navbar-section'>
       {/* HERO COMPONENT */}
@@ -22,12 +34,13 @@ export default async function Home() {
       <MobileNav />
 
       {/* CATEGORY  LISTING */}
-      <CategoryListing />
+      <CategoryListing data={categories} />
 
       {/* Tranding Today */}
-      <Trending title='Trending Wines' bg='red' data={featuredProducts} />
-      <Trending title='Spirits' bg='blue' />
-      <Trending title='Wedding wines' bg='green' />
+      <Trending title='Trending Wines' bg='#fca5a5' data={featuredProducts} />
+
+      <Trending title='Spirits' bg='#99f6e4' data={allSpirits} />
+      <Trending title='Wedding wines' bg='#a8a29e' data={allWeddingWines} />
 
       {/* FAQs */}
       <Faq />
