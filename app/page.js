@@ -5,7 +5,16 @@ import MobileNav from "./components/MobileNav";
 import Faq from "./components/Faq";
 import CallToAction from "./components/CallToAction";
 import Footer from "./components/Footer";
-export default function Home() {
+import { getProducts } from "./api/products/route";
+
+export default async function Home() {
+  const products = await getProducts();
+  // console.log(products);
+
+  const featuredProducts = products.filter(
+    (product) => product.IsFeatured == true
+  );
+  // console.log(featuredProducts);
   return (
     <main className='navbar-section'>
       {/* HERO COMPONENT */}
@@ -16,7 +25,9 @@ export default function Home() {
       <CategoryListing />
 
       {/* Tranding Today */}
-      <Trending />
+      <Trending title='Trending Wines' bg='red' data={featuredProducts} />
+      <Trending title='Spirits' bg='blue' />
+      <Trending title='Wedding wines' bg='green' />
 
       {/* FAQs */}
       <Faq />
