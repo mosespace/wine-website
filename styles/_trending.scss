@@ -9,6 +9,7 @@
   }
 
   .trending-grid {
+    padding-bottom: 1.5rem;
     display: grid;
     gap: 1rem;
 
@@ -24,6 +25,9 @@
         gap: 9rem;
         display: flex;
         align-items: center;
+        .heart {
+          cursor: pointer;
+        }
 
         .span-class {
           font-size: 0.7rem;
@@ -45,19 +49,22 @@
       h2 {
         font-size: 1.2rem;
       }
-
-      img {
+      .image {
         position: relative;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        height: 200px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
       }
 
       .button-component {
         align-items: center;
         display: flex;
         padding-top: 1rem;
-        gap: 7rem;
+        // gap: 7rem;
+        justify-content: space-between;
 
         a {
           color: $primary;
