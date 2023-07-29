@@ -12,7 +12,7 @@ import "swiper/css/pagination";
 import { FreeMode, Pagination, Navigation } from "swiper/modules";
 import Image from "next/image";
 
-export default function CategoryListing() {
+export default function CategoryListing({ data }) {
   return (
     <section className='category-listing'>
       <div className='real-section'>
@@ -41,60 +41,16 @@ export default function CategoryListing() {
           modules={[FreeMode, Pagination, Navigation]}
           className='categorySwiper'
         >
-          <SwiperSlide>
-            <div className='slide-image'>
-              <Image src={Liquer} alt='the alt tag goes here' fill />
-            </div>
-            <h2>Whiskey</h2>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className='slide-image'>
-              <Image src={Liquer} alt='the alt tag goes here' fill />
-            </div>
-            <h2>Whiskey</h2>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className='slide-image'>
-              <Image src={Liquer} alt='the alt tag goes here' fill />
-            </div>
-            <h2>Spirits</h2>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className='slide-image'>
-              <Image src={Liquer} alt='the alt tag goes here' fill />
-            </div>
-            <h2>Champegane & Sparkling</h2>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className='slide-image'>
-              <Image src={Liquer} alt='the alt tag goes here' fill />
-            </div>
-            <h2>Wine</h2>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className='slide-image'>
-              <Image src={Liquer} alt='the alt tag goes here' fill />
-            </div>
-            <h2>Liquer</h2>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className='slide-image'>
-              <Image src={Liquer} alt='the alt tag goes here' fill />
-            </div>
-            <h2>Whiskey</h2>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className='slide-image'>
-              <Image src={Liquer} alt='the alt tag goes here' fill />
-            </div>
-            <h2>Whiskey</h2>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className='slide-image'>
-              <Image src={Liquer} alt='the alt tag goes here' fill />
-            </div>
-            <h2>Whiskey</h2>
-          </SwiperSlide>
+          {data.map((category, id) => {
+            return (
+              <SwiperSlide key={id}>
+                <div className='slide-image'>
+                  <Image src={category.image} alt={category.description} fill />
+                </div>
+                <h2>{category.title}</h2>
+              </SwiperSlide>
+            );
+          })}
         </Swiper>
       </div>
     </section>
