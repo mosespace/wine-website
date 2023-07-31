@@ -2,6 +2,7 @@
   {
     "id": 1,
     "title": "Whiskey",
+    "slug": "whiskey",
     "description": "A distilled alcoholic beverage made from fermented grain mash.",
     "image": "/images/Whiskey.png",
     "keywords": ["whiskey", "whisky", "bourbon"]
@@ -9,6 +10,7 @@
   {
     "id": 2,
     "title": "Spirit",
+    "slug": "spirit",
     "description": "Various distilled alcoholic beverages.",
     "image": "/images/Spirits.png",
     "keywords": ["spirits", "alcohol"]
@@ -16,6 +18,7 @@
   {
     "id": 3,
     "title": "Champagne & Sparkling",
+    "slug": "champagne-and-Sparkling",
     "description": "Elegant sparkling wines, including champagne.",
     "image": "/images/Champagane.png",
     "keywords": ["champagne", "sparkling wine", "bubbly"]
@@ -23,6 +26,7 @@
   {
     "id": 4,
     "title": "Wines",
+    "slug": "wines",
     "description": "An alcoholic beverage made from fermented grapes or other fruits.",
     "image": "/images/Wine.png",
     "keywords": ["wine", "red wine", "white wine"]
@@ -30,6 +34,7 @@
   {
     "id": 5,
     "title": "Liqueurs",
+    "slug": "liqueurs",
     "description": "Sweet alcoholic beverages flavored with various ingredients.",
     "image": "/images/liquer.png",
     "keywords": ["liqueur", "flavored spirits"]
@@ -37,6 +42,7 @@
   {
     "id": 6,
     "title": "Beer and Cider",
+    "slug": "beer-and-cider",
     "description": "Fermented alcoholic beverages made from grains or fruits.",
     "image": "/images/Spirits.png",
     "keywords": ["beer", "cider", "ale", "lager"]
@@ -44,6 +50,7 @@
   {
     "id": 7,
     "title": "Mixers & Soft Drinks",
+    "slug": "mixersand-soft-drinks",
     "description": "Non-alcoholic beverages used in cocktails and for mixing with spirits.",
     "image": "/images/Spirits.png",
     "keywords": ["mixers", "soft drinks", "soda", "tonic water"]
@@ -51,6 +58,7 @@
   {
     "id": 8,
     "title": "Wedding wines",
+    "slug": "wedding-wines",
     "description": "Specially selected wines for weddings and special occasions.",
     "image": "/images/Spirits.png",
     "keywords": ["wedding wines", "celebration wines"]
