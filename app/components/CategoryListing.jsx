@@ -11,8 +11,9 @@ import "swiper/css/pagination";
 // import required modules
 import { FreeMode, Pagination, Navigation } from "swiper/modules";
 import Image from "next/image";
+import Link from "next/link";
 
-export default function CategoryListing({ data }) {
+export default function CategoryListing({ data}) {
   return (
     <section className='category-listing'>
       <div className='real-section'>
@@ -44,10 +45,16 @@ export default function CategoryListing({ data }) {
           {data.map((category, id) => {
             return (
               <SwiperSlide key={id}>
-                <div className='slide-image'>
-                  <Image src={category.image} alt={category.description} fill />
-                </div>
-                <h2>{category.title}</h2>
+                <Link href={`/categories/${category.slug}`}>
+                  <div className='slide-image'>
+                    <Image
+                      src={category.image}
+                      alt={category.description}
+                      fill
+                    />
+                  </div>
+                  <h2>{category.title}</h2>
+                </Link>
               </SwiperSlide>
             );
           })}
