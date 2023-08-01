@@ -1,0 +1,144 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+
+  .left-side-bar {
+    background-color: $primary;
+    // height: 100vh;
+    width: 23%;
+
+    .category-list {
+      background-color: $primary;
+      margin: 1rem;
+      padding: 1rem;
+      border: 1px Solid $grey;
+      border-radius: 20px;
+      .show-all-cat-dropdown {
+        padding: 0;
+        padding-bottom: 0.8rem;
+        // background-color: $main-color;
+        border-bottom: 1px solid $grey;
+      }
+
+      span {
+        display: flex;
+        align-items: center;
+        font-size: 1.1rem;
+        border-width: 100%;
+      }
+
+      .category-title {
+        padding: 0.7rem 0;
+        font-size: 1.1rem;
+        font-weight: 600;
+        font-weight: 600;
+        border-bottom: 1px solid $grey;
+      }
+
+      ul {
+        // padding-top: 1rem;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+
+        :hover {
+          color: $main-color;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .filter-section {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin: 1rem;
+      padding: 1rem;
+      font-size: 1.2rem;
+
+      .electro_product_filter {
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $grey;
+      }
+      .brands {
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $grey;
+        .checkmark {
+          display: flex;
+          align-items: center;
+          font-size: 1rem;
+          gap: 0.5rem;
+        }
+      }
+      .price-filter {
+        .price_slider_amount {
+          padding: 1.2rem 0;
+          button {
+            padding: 0.6rem 1.5rem;
+            background-color: $main-color;
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .main-site-map {
+    color: white;
+    background-color: $main-color;
+    padding: 3rem 5rem;
+    width: 77%;
+    .first-line {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+    }
+    .categories {
+      // display: flex;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+      gap: 1rem;
+      padding: 1rem 0;
+      //   place-items: center;
+      .cat-1 {
+        color: $black;
+        // width: 50%;
+        padding: 2rem;
+        background-color: white;
+        cursor: pointer;
+        &:hover {
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+            rgba(17, 17, 26, 0.05) 0px 8px 32px;
+        }
+        .cat-img {
+          position: relative;
+          height: 200px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+        .price {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          color: $main-color;
+          font-size: 2rem;
+        }
+        h1 {
+          font-size: 1.2rem;
+          font-weight: 500;
+          color: $main-color;
+        }
+      }
+    }
+  }
+}
