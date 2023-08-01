@@ -10,7 +10,7 @@ export default function Products({ title, bg, data }) {
         <a href='#'>See More</a>
       </div>
       <div className='trending-grid'>
-        {data?.splice(0, 5).map((product, i) => {
+        {data?.splice(0,5).map((product, i) => {
           return (
             <div className='card' key={i}>
               <div className='upper-icons'>
