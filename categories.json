@@ -44,7 +44,7 @@
     "title": "Beer and Cider",
     "slug": "beer-and-cider",
     "description": "Fermented alcoholic beverages made from grains or fruits.",
-    "image": "/images/Spirits.png",
+    "image": "/images/Bear and Cider.png",
     "keywords": ["beer", "cider", "ale", "lager"]
   },
   {
@@ -52,7 +52,7 @@
     "title": "Mixers & Soft Drinks",
     "slug": "mixersand-soft-drinks",
     "description": "Non-alcoholic beverages used in cocktails and for mixing with spirits.",
-    "image": "/images/Spirits.png",
+    "image": "/images/Mixers & Soft Drinks.png",
     "keywords": ["mixers", "soft drinks", "soda", "tonic water"]
   },
   {
@@ -60,7 +60,7 @@
     "title": "Wedding wines",
     "slug": "wedding-wines",
     "description": "Specially selected wines for weddings and special occasions.",
-    "image": "/images/Spirits.png",
+    "image": "/images/Wedding Wines.png",
     "keywords": ["wedding wines", "celebration wines"]
   }
 ]
