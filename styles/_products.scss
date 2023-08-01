@@ -2,6 +2,22 @@
   color: black;
   background-color: #d6d6d6;
 
+  .trending-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      background-color: $primary;
+      padding: 0.5rem 1rem;
+      border-radius: 30px;
+      font-size: 1rem;
+      &:hover {
+        color: #fff;
+        background-color: transparent;
+        border: 1px Solid red;
+      }
+    }
+  }
   h1 {
     padding-bottom: 2rem;
     font-size: 2rem;
