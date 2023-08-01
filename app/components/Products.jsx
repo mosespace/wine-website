@@ -7,6 +7,7 @@ export default function Products({ title, bg, data }) {
     <section className='trending-section' style={{ background: bg }}>
       <div className='trending-title'>
         <h1>{title}</h1>
+        <a href='#'>See More</a>
       </div>
       <div className='trending-grid'>
         {data?.map((product, i) => {
@@ -17,14 +18,10 @@ export default function Products({ title, bg, data }) {
                   <span className='percentage'>-5%</span>
                   <span>NEW</span>
                 </div>
-                <AiOutlineHeart className="heart" size={25} />
+                <AiOutlineHeart className='heart' size={25} />
               </div>
               <div className='image'>
-                <Image
-                  src={product.image}
-                  alt={product.slug}
-                  fill
-                />
+                <Image src={product.image} alt={product.slug} fill />
               </div>
               <h2>{product.title}</h2>
               <p>{product.brief_description}</p>
