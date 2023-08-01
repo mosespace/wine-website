@@ -6,7 +6,7 @@
     "slug": "johnnie-walker-black-label",
     "brief_description": "A classic blended Scotch whiskey with a rich and smoky flavor.",
     "detailed_description": "Johnnie Walker Black Label is a well-known blended Scotch whiskey, crafted with a combination of various aged whiskies from different distilleries. It features a smooth, complex character with notes of peat, smoke, and dried fruits.",
-    "image": "/images/Spirits.png",
+    "image": "/images/all-wines/Johnnie Walker Black Label.png",
     "keywords": [
       "Johnnie Walker",
       "Black Label",
@@ -14,9 +14,9 @@
       "blended Scotch"
     ],
     "images": [
-      "/images/Whiskey.png",
-      "/images/Whiskey.png",
-      "/images/Whiskey.png"
+      "/images/all-wines/Johnnie Walker Black Label.png",
+      "/images/all-wines/Johnnie Walker Black Label.png",
+      "/images/all-wines/Johnnie Walker Black Label.png"
     ],
     "initial_price": 50.0,
     "current_price": 45.0,
@@ -32,12 +32,12 @@
     "slug": "glenfiddich-12-year-old",
     "brief_description": "A single malt Scotch whiskey with a delicate and fruity profile.",
     "detailed_description": "Glenfiddich 12 Year Old is a popular single malt Scotch whiskey with a smooth and approachable taste. It offers a combination of pear, apple, and subtle oak flavors, making it a great choice for both beginners and seasoned whiskey enthusiasts.",
-    "image": "/images/Whiskey.png",
+    "image": "/images/all-wines/Glenfiddich 12 Year Old.webp",
     "keywords": ["Glenfiddich", "12 Year Old", "single malt", "Scotch whiskey"],
     "images": [
-      "/images/Whiskey.png",
-      "/images/Whiskey.png",
-      "/images/Whiskey.png"
+      "/images/all-wines/Glenfiddich 12 Year Old.webp",
+      "/images/all-wines/Glenfiddich 12 Year Old.webp",
+      "/images/all-wines/Glenfiddich 12 Year Old.webp"
     ],
     "initial_price": 55.0,
     "current_price": 49.99,
@@ -53,12 +53,12 @@
     "slug": "jameson-irish-whiskey",
     "brief_description": "An iconic Irish whiskey with a smooth and balanced character.",
     "detailed_description": "Jameson Irish Whiskey is a well-loved spirit from Ireland, known for its triple-distilled process, which results in a smooth and gentle flavor profile. It combines sweet notes of vanilla, toasted wood, and hints of fruit.",
-    "image": "/images/Whiskey.png",
+    "image": "/images/all-wines/Jameson Irish Whiskey.png",
     "keywords": ["Jameson", "Irish Whiskey", "triple-distilled", "Ireland"],
     "images": [
-      "/images/Whiskey.png",
-      "/images/Whiskey.png",
-      "/images/Whiskey.png"
+      "/images/all-wines/Jameson Irish Whiskey.png",
+      "/images/all-wines/Jameson Irish Whiskey.png",
+      "/images/all-wines/Jameson Irish Whiskey.png"
     ],
     "initial_price": 35.0,
     "current_price": 29.99,
@@ -74,7 +74,7 @@
     "slug": "bulleit-bourbon",
     "brief_description": "A high-rye bourbon with bold and spicy flavors.",
     "detailed_description": "Bulleit Bourbon is a Kentucky straight bourbon whiskey with a distinctive high-rye mash bill. It presents a rich and full-bodied taste, showcasing strong notes of rye spice, vanilla, and caramel.",
-    "image": "/images/Whiskey.png",
+    "image": "/images/all-wines/Bulleit Bourbon.png",
     "keywords": [
       "Bulleit",
       "Bourbon",
@@ -82,9 +82,9 @@
       "rye spice"
     ],
     "images": [
-      "/images/Whiskey.png",
-      "/images/Whiskey.png",
-      "/images/Whiskey.png"
+      "/images/all-wines/Bulleit Bourbon.png",
+      "/images/all-wines/Bulleit Bourbon.png",
+      "/images/all-wines/Bulleit Bourbon.png"
     ],
     "initial_price": 42.0,
     "current_price": 38.99,
@@ -126,12 +126,12 @@
     "slug": "grey-goose-vodka",
     "brief_description": "A premium French vodka known for its smoothness and purity.",
     "detailed_description": "Grey Goose is a renowned vodka brand produced in France using high-quality ingredients and a meticulous distillation process. It offers a clean and velvety texture, making it a popular choice for martinis and cocktails.",
-    "image": "/images/Whiskey.png",
+    "image": "/images/Spirits/Grey Goose Vodka.png",
     "keywords": ["Grey Goose", "vodka", "French vodka", "premium vodka"],
     "images": [
-      "/images/Whiskey.png",
-      "/images/Whiskey.png",
-      "/images/Whiskey.png"
+      "/images/Spirits/Grey Goose Vodka.png",
+      "/images/Spirits/Grey Goose Vodka.png",
+      "/images/Spirits/Grey Goose Vodka.png"
     ],
     "initial_price": 40.0,
     "current_price": 35.99,
@@ -147,12 +147,12 @@
     "slug": "hendricks-gin",
     "brief_description": "A unique and cucumber-infused Scottish gin.",
     "detailed_description": "Hendrick's Gin stands out for its distinctive blend of botanicals, including cucumber and rose petals. It boasts a balanced and refreshing taste, perfect for gin and tonic or other creative cocktails.",
-    "image": "/images/Whiskey.png",
+    "image": "/images/Spirits/Hendrick's Gin.avif",
     "keywords": ["Hendrick's", "gin", "Scottish gin", "cucumber-infused gin"],
     "images": [
-      "/images/Whiskey.png",
-      "/images/Whiskey.png",
-      "/images/Whiskey.png"
+      "/images/Spirits/Hendrick's Gin.avif",
+      "/images/Spirits/Hendrick's Gin.avif",
+      "/images/Spirits/Hendrick's Gin.avif"
     ],
     "initial_price": 35.0,
     "current_price": 29.99,
@@ -168,7 +168,7 @@
     "slug": "patron-silver-tequila",
     "brief_description": "An award-winning premium silver tequila from Mexico.",
     "detailed_description": "Patrón Silver is a high-quality tequila made from 100% blue agave and crafted with precision. It delivers a smooth and clean taste with hints of citrus and pepper, making it excellent for sipping or mixing in cocktails.",
-    "image": "/images/Whiskey.png",
+    "image": "/images/Spirits/Patrón Silver Tequila.png",
     "keywords": [
       "Patrón Silver",
       "tequila",
@@ -176,9 +176,9 @@
       "silver tequila"
     ],
     "images": [
-      "/images/Whiskey.png",
-      "/images/Whiskey.png",
-      "/images/Whiskey.png"
+      "/images/Spirits/Patrón Silver Tequila.png",
+      "/images/Spirits/Patrón Silver Tequila.png",
+      "/images/Spirits/Patrón Silver Tequila.png"
     ],
     "initial_price": 50.0,
     "current_price": 46.99,
@@ -194,12 +194,12 @@
     "slug": "bacardi-superior-rum",
     "brief_description": "A classic and versatile white rum ideal for various cocktails.",
     "detailed_description": "Bacardi Superior is a well-known white rum appreciated for its smoothness and versatility. It works exceptionally well in traditional rum cocktails like Mojitos and Daiquiris, as well as mixed drinks.",
-    "image": "/images/Whiskey.png",
+    "image": "/images/Spirits/Bacardi Superior Rum.png",
     "keywords": ["Bacardi Superior", "rum", "white rum", "versatile rum"],
     "images": [
-      "/images/Whiskey.png",
-      "/images/Whiskey.png",
-      "/images/Whiskey.png"
+      "/images/Spirits/Bacardi Superior Rum.png",
+      "/images/Spirits/Bacardi Superior Rum.png",
+      "/images/Spirits/Bacardi Superior Rum.png"
     ],
     "initial_price": 25.0,
     "current_price": 19.99,
@@ -215,7 +215,7 @@
     "slug": "cointreau-triple-sec",
     "brief_description": "A premium orange liqueur with a smooth and sweet flavor.",
     "detailed_description": "Cointreau is a highly regarded triple sec liqueur made from sweet and bitter orange peels. Its balanced and vibrant taste enhances a wide range of cocktails, including Margaritas and Cosmopolitans.",
-    "image": "/images/Whiskey.png",
+    "image": "/images/Spirits/Cointreau Triple Sec.jpg",
     "keywords": [
       "Cointreau",
       "triple sec",
@@ -223,9 +223,9 @@
       "premium liqueur"
     ],
     "images": [
-      "/images/Whiskey.png",
-      "/images/Whiskey.png",
-      "/images/Whiskey.png"
+      "/images/Spirits/Cointreau Triple Sec.jpg",
+      "/images/Spirits/Cointreau Triple Sec.jpg",
+      "/images/Spirits/Cointreau Triple Sec.jpg"
     ],
     "initial_price": 30.0,
     "current_price": 27.99,
@@ -234,7 +234,6 @@
     "type": "hard",
     "abv": 40
   },
-
   {
     "id": 201,
     "category_id": 3,
@@ -242,12 +241,12 @@
     "slug": "moet-chandon-imperial",
     "brief_description": "A renowned champagne with a balanced and elegant taste.",
     "detailed_description": "Moët & Chandon Impérial is one of the world's most famous champagne brands. It features a delightful blend of Pinot Noir, Pinot Meunier, and Chardonnay, resulting in a harmonious and well-balanced flavor profile with notes of apple, pear, and citrus.",
-    "image": "/images/Whiskey.png",
+    "image": "/images/all-wines/Moët & Chandon Impérial.png",
     "keywords": [
-      "/images/Whiskey.png",
-      "/images/Whiskey.png",
-      "/images/Whiskey.png",
-      "/images/Whiskey.png"
+      "/images/all-wines/Moët & Chandon Impérial.png",
+      "/images/all-wines/Moët & Chandon Impérial.png",
+      "/images/all-wines/Moët & Chandon Impérial.png",
+      "/images/all-wines/Moët & Chandon Impérial.png"
     ],
     "images": ["image1.jpg", "image2.jpg", "image3.jpg"],
     "initial_price": 60.0,
@@ -264,7 +263,7 @@
     "slug": "veuve-clicquot-yellow-label",
     "brief_description": "A prestigious champagne with a rich and toasty character.",
     "detailed_description": "Veuve Clicquot Yellow Label is a well-respected champagne recognized for its consistent quality. It offers a luxurious and full-bodied taste with flavors of ripe fruit, brioche, and a hint of vanilla.",
-    "image": "/images/Whiskey.png",
+    "image": "/images/all-wines/Veuve Clicquot Yellow Label.png",
     "keywords": [
       "Veuve Clicquot",
       "Yellow Label",
@@ -272,9 +271,9 @@
       "sparkling wine"
     ],
     "images": [
-      "/images/Whiskey.png",
-      "/images/Whiskey.png",
-      "/images/Whiskey.png"
+      "/images/all-wines/Veuve Clicquot Yellow Label.png",
+      "/images/all-wines/Veuve Clicquot Yellow Label.png",
+      "/images/all-wines/Veuve Clicquot Yellow Label.png"
     ],
     "initial_price": 70.0,
     "current_price": 64.99,
@@ -311,12 +310,12 @@
     "slug": "dom-perignon-vintage",
     "brief_description": "An exceptional vintage champagne with a complex and sophisticated taste.",
     "detailed_description": "Dom Pérignon is a prestigious champagne revered for its exceptional quality and aging potential. It showcases a rich and nuanced flavor profile with hints of stone fruit, almond, and toast, making it a true connoisseur's choice.",
-    "image": "/images/Whiskey.png",
+    "image": "/images/all-wines/Dom Pérignon Vintage.png",
     "keywords": ["Dom Pérignon", "Vintage", "champagne", "sparkling wine"],
     "images": [
-      "/images/Whiskey.png",
-      "/images/Whiskey.png",
-      "/images/Whiskey.png"
+      "/images/all-wines/Dom Pérignon Vintage.png",
+      "/images/all-wines/Dom Pérignon Vintage.png",
+      "/images/all-wines/Dom Pérignon Vintage.png"
     ],
     "initial_price": 150.0,
     "current_price": 139.99,
@@ -353,12 +352,12 @@
     "slug": "chateau-margaux-2015",
     "brief_description": "A prestigious red Bordeaux wine with exceptional depth and elegance.",
     "detailed_description": "Château Margaux 2015 is a highly acclaimed Bordeaux wine known for its exceptional quality and aging potential. It boasts a rich and complex flavor profile with notes of black fruits, cassis, tobacco, and hints of violet.",
-    "image": "/images/Whiskey.png",
+    "image": "/images/all-wines/Château Margaux 2015.webp",
     "keywords": ["Château Margaux", "2015", "Bordeaux wine", "red wine"],
     "images": [
-      "/images/Whiskey.png",
-      "/images/Whiskey.png",
-      "/images/Whiskey.png"
+      "/images/all-wines/Château Margaux 2015.webp",
+      "/images/all-wines/Château Margaux 2015.webp",
+      "/images/all-wines/Château Margaux 2015.webp"
     ],
     "initial_price": 400.0,
     "current_price": 379.99,
@@ -374,12 +373,12 @@
     "slug": "opus-one-2016",
     "brief_description": "An iconic Napa Valley wine with a harmonious and opulent character.",
     "detailed_description": "Opus One 2016 is a prestigious and sought-after wine produced in the Napa Valley. It presents a beautifully balanced taste with flavors of dark fruits, mocha, and hints of spices, offering a memorable and luxurious experience.",
-    "image": "/images/Whiskey.png",
+    "image": "/images/all-wines/Opus One 2016.jpg",
     "keywords": ["Opus One", "2016", "Napa Valley wine", "red wine"],
     "images": [
-      "/images/Whiskey.png",
-      "/images/Whiskey.png",
-      "/images/Whiskey.png"
+      "/images/all-wines/Opus One 2016.jpg",
+      "/images/all-wines/Opus One 2016.jpg",
+      "/images/all-wines/Opus One 2016.jpg"
     ],
     "initial_price": 350.0,
     "current_price": 329.99,
@@ -421,12 +420,12 @@
     "slug": "barolo-2013",
     "brief_description": "An exquisite and age-worthy Italian Barolo with bold and complex flavors.",
     "detailed_description": "Barolo 2013 is a highly-regarded Italian wine from the Piedmont region, made from the Nebbiolo grape. It exhibits a full-bodied taste with layers of dark cherry, plum, leather, and earthy undertones.",
-    "image": "/images/Whiskey.png",
+    "image": "/images/all-wines/Barolo 2013.jpg",
     "keywords": ["Barolo", "2013", "Italian wine", "red wine"],
     "images": [
-      "/images/Whiskey.png",
-      "/images/Whiskey.png",
-      "/images/Whiskey.png"
+      "/images/all-wines/Barolo 2013.jpg",
+      "/images/all-wines/Barolo 2013.jpg",
+      "/images/all-wines/Barolo 2013.jpg"
     ],
     "initial_price": 60.0,
     "current_price": 54.99,
@@ -468,12 +467,12 @@
     "slug": "baileys-irish-cream",
     "brief_description": "A beloved Irish cream liqueur with a smooth and creamy taste.",
     "detailed_description": "Baileys Irish Cream is an iconic and indulgent liqueur from Ireland. It combines rich cream with Irish whiskey and a touch of cocoa and vanilla, delivering a lusciously smooth and sweet flavor.",
-    "image": "/images/Whiskey.png",
+    "image": "/images/all-wines/Baileys Irish Cream.png",
     "keywords": ["Baileys", "Irish Cream", "liqueur", "cream liqueur"],
     "images": [
-      "/images/Whiskey.png",
-      "/images/Whiskey.png",
-      "/images/Whiskey.png"
+      "/images/all-wines/Baileys Irish Cream.png",
+      "/images/all-wines/Baileys Irish Cream.png",
+      "/images/all-wines/Baileys Irish Cream.png"
     ],
     "initial_price": 25.0,
     "current_price": 21.99,
@@ -489,7 +488,7 @@
     "slug": "kahlua-coffee-liqueur",
     "brief_description": "A popular coffee liqueur with rich coffee bean flavors and a hint of rum.",
     "detailed_description": "Kahlúa Coffee Liqueur is a well-known and versatile liqueur, loved for its bold coffee taste and a touch of sweetness. It's made from Arabica coffee beans and blended with sugarcane rum, offering a perfect base for coffee-based cocktails.",
-    "image": "/images/Whiskey.png",
+    "image": "/images/all-wines/Kahlúa Coffee Liqueur.png",
     "keywords": [
       "Kahlúa",
       "Coffee Liqueur",
@@ -497,9 +496,9 @@
       "coffee-flavored liqueur"
     ],
     "images": [
-      "/images/Whiskey.png",
-      "/images/Whiskey.png",
-      "/images/Whiskey.png"
+      "/images/all-wines/Kahlúa Coffee Liqueur.png",
+      "/images/all-wines/Kahlúa Coffee Liqueur.png",
+      "/images/all-wines/Kahlúa Coffee Liqueur.png"
     ],
     "initial_price": 30.0,
     "current_price": 26.99,
@@ -536,12 +535,12 @@
     "slug": "disaronno-originale",
     "brief_description": "A classic Italian amaretto liqueur with a rich almond flavor.",
     "detailed_description": "Disaronno Originale is a beloved amaretto liqueur from Italy, cherished for its smooth and nutty taste. It offers an exquisite balance of sweet almonds, marzipan, and a hint of apricot.",
-    "image": "/images/Whiskey.png",
+    "image": "/images/all-wines/Disaronno Originale.png",
     "keywords": ["Disaronno", "Originale", "liqueur", "amaretto liqueur"],
     "images": [
-      "/images/Whiskey.png",
-      "/images/Whiskey.png",
-      "/images/Whiskey.png"
+      "/images/all-wines/Disaronno Originale.png",
+      "/images/all-wines/Disaronno Originale.png",
+      "/images/all-wines/Disaronno Originale.png"
     ],
     "initial_price": 35.0,
     "current_price": 29.99,
@@ -583,12 +582,12 @@
     "slug": "heineken-lager-beer",
     "brief_description": "A classic and refreshing Dutch lager beer loved worldwide.",
     "detailed_description": "Heineken Lager Beer is a well-known and widely consumed beer, known for its crisp and clean taste. It is brewed using high-quality ingredients and offers a balanced flavor with a slight hoppy bitterness.",
-    "image": "/images/Whiskey.png",
+    "image": "/images/all-wines/Heineken Lager Beer.png",
     "keywords": ["Heineken", "Lager Beer", "beer", "Dutch beer"],
     "images": [
-      "/images/Whiskey.png",
-      "/images/Whiskey.png",
-      "/images/Whiskey.png"
+      "/images/all-wines/Heineken Lager Beer.png",
+      "/images/all-wines/Heineken Lager Beer.png",
+      "/images/all-wines/Heineken Lager Beer.png"
     ],
     "initial_price": 12.0,
     "current_price": 10.99,
@@ -604,12 +603,12 @@
     "slug": "guinness-draught-stout",
     "brief_description": "An iconic Irish stout with a rich and creamy texture.",
     "detailed_description": "Guinness Draught Stout is an iconic Irish beer, celebrated for its distinctive roasted malt flavor and creamy mouthfeel. It presents a harmonious blend of coffee, chocolate, and dark fruit notes.",
-    "image": "/images/Whiskey.png",
+    "image": "/images/all-wines/Guinness Draught Stout.png",
     "keywords": ["Guinness", "Draught Stout", "stout", "Irish beer"],
     "images": [
-      "/images/Whiskey.png",
-      "/images/Whiskey.png",
-      "/images/Whiskey.png"
+      "/images/all-wines/Guinness Draught Stout.png",
+      "/images/all-wines/Guinness Draught Stout.png",
+      "/images/all-wines/Guinness Draught Stout.png"
     ],
     "initial_price": 15.0,
     "current_price": 12.99,
@@ -646,12 +645,12 @@
     "slug": "angry-orchard-crisp-apple-cider",
     "brief_description": "A popular and refreshing apple cider with a crisp and juicy taste.",
     "detailed_description": "Angry Orchard Crisp Apple Cider is a well-known and approachable cider loved for its natural apple flavor and pleasant sweetness. It offers a refreshing and fruity experience with a clean finish.",
-    "image": "/images/Whiskey.png",
+    "image": "/images/all-wines/Angry Orchard Crisp Apple Cider.png",
     "keywords": ["Angry Orchard", "Crisp Apple Cider", "cider", "apple cider"],
     "images": [
-      "/images/Whiskey.png",
-      "/images/Whiskey.png",
-      "/images/Whiskey.png"
+      "/images/all-wines/Angry Orchard Crisp Apple Cider.png",
+      "/images/all-wines/Angry Orchard Crisp Apple Cider.png",
+      "/images/all-wines/Angry Orchard Crisp Apple Cider.png"
     ],
     "initial_price": 20.0,
     "current_price": 17.99,
@@ -688,12 +687,12 @@
     "slug": "coca-cola-classic",
     "brief_description": "The classic and beloved cola with a refreshing taste.",
     "detailed_description": "Coca-Cola Classic is the world's most popular soft drink, cherished for its iconic flavor and effervescence. It delivers a refreshing and invigorating experience with every sip.",
-    "image": "/images/Whiskey.png",
+    "image": "/images/all-wines/Coca-Cola Classic.png",
     "keywords": ["Coca-Cola", "Classic", "soft drink", "cola"],
     "images": [
-      "/images/Whiskey.png",
-      "/images/Whiskey.png",
-      "/images/Whiskey.png"
+      "/images/all-wines/Coca-Cola Classic.png",
+      "/images/all-wines/Coca-Cola Classic.png",
+      "/images/all-wines/Coca-Cola Classic.png"
     ],
     "initial_price": 2.0,
     "current_price": 1.49,
@@ -709,12 +708,12 @@
     "slug": "sprite-lemon-lime-soda",
     "brief_description": "A crisp and refreshing lemon-lime flavored soda.",
     "detailed_description": "Sprite Lemon-Lime Soda is a popular and zesty beverage, loved for its clean and refreshing taste. It is caffeine-free and boasts a citrusy burst of flavor.",
-    "image": "/images/Whiskey.png",
+    "image": "/images/all-wines/Sprite Lemon-Lime Sodac.png",
     "keywords": ["Sprite", "Lemon-Lime Soda", "soft drink", "lemon-lime"],
     "images": [
-      "/images/Whiskey.png",
-      "/images/Whiskey.png",
-      "/images/Whiskey.png"
+      "/images/all-wines/Sprite Lemon-Lime Sodac.png",
+      "/images/all-wines/Sprite Lemon-Lime Sodac.png",
+      "/images/all-wines/Sprite Lemon-Lime Sodac.png"
     ],
     "initial_price": 2.0,
     "current_price": 1.49,
@@ -751,12 +750,12 @@
     "slug": "tonic-water",
     "brief_description": "A classic tonic water with a hint of bitterness.",
     "detailed_description": "Tonic Water is a staple mixer in various cocktails and enjoyed on its own. It has a slightly bitter taste due to quinine and is often paired with gin for a classic Gin and Tonic.",
-    "image": "/images/Whiskey.png",
+    "image": "/images/all-wines/Tonic Water.webp",
     "keywords": ["Tonic Water", "soft drink", "mixer", "bitter"],
     "images": [
-      "/images/Whiskey.png",
-      "/images/Whiskey.png",
-      "/images/Whiskey.png"
+      "/images/all-wines/Tonic Water.webp",
+      "/images/all-wines/Tonic Water.webp",
+      "/images/all-wines/Tonic Water.webp"
     ],
     "initial_price": 2.5,
     "current_price": 1.99,
@@ -793,7 +792,7 @@
     "slug": "chateau-lafite-rothschild-2010",
     "brief_description": "A prestigious and collectible Bordeaux wine with remarkable complexity.",
     "detailed_description": "Château Lafite Rothschild 2010 is a highly sought-after Bordeaux wine, considered one of the finest in the world. It exhibits an extraordinary blend of Cabernet Sauvignon, Merlot, Cabernet Franc, and Petit Verdot, presenting a harmonious and multi-layered taste with notes of blackcurrant, cedar, and tobacco.",
-    "image": "/images/Whiskey.png",
+    "image": "/images/all-wines/Château Lafite Rothschild 2010.png",
     "keywords": [
       "Château Lafite Rothschild",
       "2010",
@@ -801,9 +800,9 @@
       "red wine"
     ],
     "images": [
-      "/images/Whiskey.png",
-      "/images/Whiskey.png",
-      "/images/Whiskey.png"
+      "/images/all-wines/Château Lafite Rothschild 2010.png",
+      "/images/all-wines/Château Lafite Rothschild 2010.png",
+      "/images/all-wines/Château Lafite Rothschild 2010.png"
     ],
     "initial_price": 800.0,
     "current_price": 749.99,
@@ -819,12 +818,12 @@
     "slug": "dom-perignon-p2-vintage-2002",
     "brief_description": "An exceptional and mature champagne for celebrating special moments.",
     "detailed_description": "Dom Pérignon P2 Vintage 2002 is an exclusive champagne that has undergone extended aging on the lees, resulting in heightened complexity and depth of flavor. It showcases an opulent taste with nuances of toasted brioche, dried fruits, and hazelnut.",
-    "image": "/images/Whiskey.png",
+    "image": "/images/all-wines/Dom Pérignon P2 Vintage 2002.jpg",
     "keywords": ["Dom Pérignon", "P2 Vintage", "champagne", "sparkling wine"],
     "images": [
-      "/images/Whiskey.png",
-      "/images/Whiskey.png",
-      "/images/Whiskey.png"
+      "/images/all-wines/Dom Pérignon P2 Vintage 2002.jpg",
+      "/images/all-wines/Dom Pérignon P2 Vintage 2002.jpg",
+      "/images/all-wines/Dom Pérignon P2 Vintage 2002.jpg"
     ],
     "initial_price": 400.0,
     "current_price": 379.99,
@@ -840,12 +839,12 @@
     "slug": "opus-one-2015",
     "brief_description": "A luxurious Napa Valley wine with impeccable balance and finesse.",
     "detailed_description": "Opus One 2015 is a prestigious and collectible wine, representing a collaboration between Robert Mondavi and Baron Philippe de Rothschild. It offers a seamless and elegant taste with layers of blackberry, currant, mocha, and hints of graphite.",
-    "image": "/images/Whiskey.png",
+    "image": "/images/all-wines/Opus One 2015.webp",
     "keywords": ["Opus One", "2015", "Napa Valley wine", "red wine"],
     "images": [
-      "/images/Whiskey.png",
-      "/images/Whiskey.png",
-      "/images/Whiskey.png"
+      "/images/all-wines/Opus One 2015.webp",
+      "/images/all-wines/Opus One 2015.webp",
+      "/images/all-wines/Opus One 2015.webp"
     ],
     "initial_price": 350.0,
     "current_price": 329.99,
@@ -887,12 +886,12 @@
     "slug": "ridge-monte-bello-2014",
     "brief_description": "An exceptional California Cabernet Sauvignon with depth and complexity.",
     "detailed_description": "Ridge Monte Bello 2014 is a highly-regarded California wine, renowned for its powerful and age-worthy character. It presents an intricate taste with black cherry, plum, graphite, and earthy undertones, leading to a long and satisfying finish.",
-    "image": "/images/Whiskey.png",
+    "image": "/images/all-wines/Ridge Monte Bello 2014.jpg",
     "keywords": ["Ridge Monte Bello", "2014", "California wine", "red wine"],
     "images": [
-      "/images/Whiskey.png",
-      "/images/Whiskey.png",
-      "/images/Whiskey.png"
+      "/images/all-wines/Ridge Monte Bello 2014.jpg",
+      "/images/all-wines/Ridge Monte Bello 2014.jpg",
+      "/images/all-wines/Ridge Monte Bello 2014.jpg"
     ],
     "initial_price": 180.0,
     "current_price": 169.99,
