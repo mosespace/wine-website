@@ -1,4 +1,5 @@
 import { getCategories } from "@/app/api/categories/route";
+import DetailedCategories from "@/app/components/DetailedCategories";
 import React from "react";
 
 export default async function page({ params: { slug } }) {
@@ -7,7 +8,7 @@ export default async function page({ params: { slug } }) {
   const category = categories?.find((category) => category.slug == slug);
   return (
     <section className='detailed-section'>
-      <h1>Hello {slug} </h1>
+      <DetailedCategories data={category} />
     </section>
   );
 }
