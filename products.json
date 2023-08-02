@@ -708,12 +708,12 @@
     "slug": "sprite-lemon-lime-soda",
     "brief_description": "A crisp and refreshing lemon-lime flavored soda.",
     "detailed_description": "Sprite Lemon-Lime Soda is a popular and zesty beverage, loved for its clean and refreshing taste. It is caffeine-free and boasts a citrusy burst of flavor.",
-    "image": "/images/all-wines/Sprite Lemon-Lime Sodac.png",
+    "image": "/images/all-wines/Sprite Lemon-Lime Soda.png",
     "keywords": ["Sprite", "Lemon-Lime Soda", "soft drink", "lemon-lime"],
     "images": [
-      "/images/all-wines/Sprite Lemon-Lime Sodac.png",
-      "/images/all-wines/Sprite Lemon-Lime Sodac.png",
-      "/images/all-wines/Sprite Lemon-Lime Sodac.png"
+      "/images/all-wines/Sprite Lemon-Lime Soda.png",
+      "/images/all-wines/Sprite Lemon-Lime Soda.png",
+      "/images/all-wines/Sprite Lemon-Lime Soda.png"
     ],
     "initial_price": 2.0,
     "current_price": 1.49,
