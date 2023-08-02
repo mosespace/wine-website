@@ -40,7 +40,9 @@ function Navbar() {
         <div className='flex-works'>
           <div>
             <ul>
-              <h1>Logo</h1>
+              <Link href='/'>
+                <h1>Logo</h1>
+              </Link>
               <li>
                 <BsTelephoneFill className='inline-icon' />
                 +(256) 770981193
