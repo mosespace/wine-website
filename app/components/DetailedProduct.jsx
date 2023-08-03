@@ -4,7 +4,6 @@ import Image from "next/image";
 import { MdAddShoppingCart } from "react-icons/md";
 
 export default function DetailedProduct({ data }) {
-  //   console.log(data);
   return (
     <section className='flex-container'>
       <div className='image-container'>
