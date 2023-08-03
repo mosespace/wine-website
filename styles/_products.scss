@@ -41,6 +41,7 @@
       .upper-icons {
         gap: 9rem;
         display: flex;
+        justify-content: space-between;
         align-items: center;
         .heart {
           cursor: pointer;
