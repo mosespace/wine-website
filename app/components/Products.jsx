@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import { AiOutlineHeart, AiOutlineShoppingCart } from "react-icons/ai";
+import { AiOutlineShoppingCart } from "react-icons/ai";
+import { FiShare } from "react-icons/fi";
 import Link from "next/link";
 
 export default function Products({ title, bg, data }) {
@@ -20,7 +21,7 @@ export default function Products({ title, bg, data }) {
                     <span className='percentage'>-5%</span>
                     <span>NEW</span>
                   </div>
-                  <AiOutlineHeart className='heart' size={25} />
+                  <FiShare className='heart' size={25} />
                 </div>
                 <div className='image'>
                   <Image src={product.image} alt={product.slug} fill />
