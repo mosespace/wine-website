@@ -4,7 +4,6 @@ import Products from "./components/Products";
 import MobileNav from "./components/MobileNav";
 import Faq from "./components/Faq";
 import CallToAction from "./components/CallToAction";
-import Footer from "./components/Footer";
 import { getProducts } from "./api/products/route";
 import { getCategories } from "./api/categories/route";
 
@@ -46,9 +45,6 @@ export default async function Home() {
 
       {/* Call To Action */}
       <CallToAction />
-
-      {/* FOoter Section */}
-      <Footer />
     </main>
   );
 }

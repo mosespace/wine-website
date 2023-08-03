@@ -1,7 +1,6 @@
 "use client";
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Liquer from "../../public/images/liquer.png";
 
 // Import Swiper styles
 import "swiper/css";
