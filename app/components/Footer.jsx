@@ -2,6 +2,8 @@ import React from "react";
 import { GoMail } from "react-icons/go";
 import { FiInstagram, FiTwitter } from "react-icons/fi";
 import { BsGithub } from "react-icons/bs";
+import Logo from "../../public/images/logo.png";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -9,7 +11,9 @@ export default function Footer() {
       <div className='footer-section'>
         <div className='footer-columns'>
           <div className='col-1'>
-            <h1>LOGO</h1>
+            <div className='logo'>
+              <Image src={Logo} alt='Wines' fill  sizes={20}/>
+            </div>
             <p>Copyright &copy; 2021 Kireka Shopping Centre</p>
           </div>
           <div className='col-2'>
