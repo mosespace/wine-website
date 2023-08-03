@@ -28,16 +28,15 @@
           border-width: 100%;
         }
 
-        .category-title {
-          padding: 0.7rem 0;
-          font-size: 1.1rem;
-          font-weight: 600;
-          font-weight: 600;
-          border-bottom: 1px solid $grey;
-        }
+        // .category-title {
+        //   padding: 0.7rem 0;
+        //   font-size: 1.1rem;
+        //   font-weight: 600;
+        //   font-weight: 600;
+        //   border-bottom: 1px solid $grey;
+        // }
 
         ul {
-          // padding-top: 1rem;
           gap: 1rem;
           display: flex;
           flex-direction: column;
@@ -50,39 +49,39 @@
         }
       }
 
-      .filter-section {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        margin: 1rem;
-        padding: 1rem;
-        font-size: 1.2rem;
+      // .filter-section {
+      //   display: flex;
+      //   flex-direction: column;
+      //   gap: 2rem;
+      //   margin: 1rem;
+      //   padding: 1rem;
+      //   font-size: 1.2rem;
 
-        .electro_product_filter {
-          padding-bottom: 1rem;
-          border-bottom: 1px solid $grey;
-        }
-        .brands {
-          padding-bottom: 1rem;
-          border-bottom: 1px solid $grey;
-          .checkmark {
-            display: flex;
-            align-items: center;
-            font-size: 1rem;
-            gap: 0.5rem;
-          }
-        }
-        .price-filter {
-          .price_slider_amount {
-            padding: 1.2rem 0;
-            button {
-              padding: 0.6rem 1.5rem;
-              background-color: $main-color;
-              border-radius: 20px;
-            }
-          }
-        }
-      }
+      //   .electro_product_filter {
+      //     padding-bottom: 1rem;
+      //     border-bottom: 1px solid $grey;
+      //   }
+      //   .brands {
+      //     padding-bottom: 1rem;
+      //     border-bottom: 1px solid $grey;
+      //     .checkmark {
+      //       display: flex;
+      //       align-items: center;
+      //       font-size: 1rem;
+      //       gap: 0.5rem;
+      //     }
+      //   }
+      //   .price-filter {
+      //     .price_slider_amount {
+      //       padding: 1.2rem 0;
+      //       button {
+      //         padding: 0.6rem 1.5rem;
+      //         background-color: $main-color;
+      //         border-radius: 20px;
+      //       }
+      //     }
+      //   }
+      // }
     }
 
     .category_products {
