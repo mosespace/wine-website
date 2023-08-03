@@ -2,7 +2,6 @@ import React from "react";
 import { HiHome, HiOutlineShoppingCart, HiOutlineSearch } from "react-icons/hi";
 import { LuMoreHorizontal } from "react-icons/lu";
 import { FaList } from "react-icons/fa";
-import Link from "next/link";
 
 export default function MobileNav() {
   return (
