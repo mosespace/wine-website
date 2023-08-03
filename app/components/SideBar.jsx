@@ -1,21 +1,18 @@
 import React from "react";
-import { AiOutlineShoppingCart } from "react-icons/ai";
-import Use from "../../public/images/Spirits.png";
 import { GrFormNext } from "react-icons/gr";
-import Image from "next/image";
-import Link from "next/link";
+
 function SideBar() {
   return (
     <div className='left-side-bar'>
       <div className='category-list'>
         <div className='show-all-cat-dropdown'>
           <span>
-            Show All Category <GrFormNext />
+            All Category <GrFormNext />
           </span>
         </div>
-        <div className='category-title' href='#'>
+        {/* <div className='category-title'>
           Television
-        </div>
+        </div> */}
         <ul>
           <a href='#'>4K UHD TVS</a>
           <a href='#'>Digital TVS</a>
@@ -23,7 +20,7 @@ function SideBar() {
           <a href='#'>ULED TVS</a>
         </ul>
       </div>
-      <div className='filter-section'>
+      {/* <div className='filter-section'>
         <div className='electro_product_filter'>
           <h3>Filters</h3>
         </div>
@@ -45,7 +42,7 @@ function SideBar() {
             <button>Filter</button>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
