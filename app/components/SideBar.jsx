@@ -1,7 +1,8 @@
 import React from "react";
 import { GrFormNext } from "react-icons/gr";
 
-function SideBar() {
+function SideBar({ categories }) {
+  // console.log(categories);
   return (
     <div className='left-side-bar'>
       <div className='category-list'>
@@ -14,10 +15,13 @@ function SideBar() {
           Television
         </div> */}
         <ul>
-          <a href='#'>4K UHD TVS</a>
-          <a href='#'>Digital TVS</a>
+          {categories.map((category) => {
+            return <a href={`/categories/${category.slug}`}>{category.title}</a>;
+          })}
+
+          {/* <a href='#'>Digital TVS</a>
           <a href='#'>Smart TVS</a>
-          <a href='#'>ULED TVS</a>
+          <a href='#'>ULED TVS</a> */}
         </ul>
       </div>
       {/* <div className='filter-section'>
