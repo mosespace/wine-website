@@ -54,7 +54,7 @@ function Navbar() {
               </Link>
               <li>
                 <BsTelephoneFill className='inline-icon' />
-                +(256) 770981193
+                +(256) 782654491
               </li>
               <li>
                 <a className='search-btn' href='#'>

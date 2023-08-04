@@ -13,18 +13,28 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 export default function Hero() {
+  const sliderContent = [
+    {
+      text: "Raise a Toast to Unwind and Celebrate Life's Joys.",
+      path: "/",
+      img: Slider2,
+    },
+    {
+      text: "Celebrating Life's Beauty with Wine, Women, and Wonderful Times.",
+      path: "/",
+      img: Slider3,
+    },
+    {
+      text: "Sip, Savor, Repeat: Embrace the Elegance of Wine Moments.",
+      path: "/",
+      img: Slider,
+    },
+  ];
   return (
     <section className='hero-section'>
       <div className='hero-section'>
-        <div className='hero-text'>
-          <h2 className='logo'>LOGO</h2>
-          <h1>-10% on Non-Alcoholic Spirits LYYRE's</h1>
-          <a href='#' className='read-more'>
-            Learn More <AiOutlineArrowRight />
-          </a>
-        </div>
         <div className='hero-slider'>
-          <Swiper
+          <Swiper // This is the whole Swiper Section
             spaceBetween={0}
             centeredSlides={true}
             autoplay={{
@@ -39,15 +49,31 @@ export default function Hero() {
             modules={[Autoplay, Pagination, Navigation]}
             className='mySwiper'
           >
-            <SwiperSlide>
-              <Image src={Slider} alt='This is a trial image' fill />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Image src={Slider2} alt='This is a trial image' fill />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Image src={Slider3} alt='This is a trial image' fill />
-            </SwiperSlide>
+            {sliderContent.map((slide) => {
+              return (
+                <SwiperSlide>
+                  <div className='slide-content'>
+                    <div className='hero-text'>
+                      <img
+                        src={
+                          "http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.328acc3f.png&w=2048&q=75"
+                        }
+                        alt='Wines'
+                        width='100'
+                        height='100'
+                      />
+                      <h1>{slide.text}</h1>
+                      <a href={slide.path} className='read-more'>
+                        Learn More <AiOutlineArrowRight />
+                      </a>
+                    </div>
+                    <div className='slider-image'>
+                      <Image src={slide.img} alt='This is a trial image' fill />
+                    </div>
+                  </div>
+                </SwiperSlide>
+              );
+            })}
           </Swiper>
         </div>
       </div>
