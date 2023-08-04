@@ -2,6 +2,8 @@ import Link from "next/link";
 import React from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { BsCart3, BsPaypal, BsSearch, BsTelephoneFill } from "react-icons/bs";
+import Logo from "../../public/images/bg1.jpg";
+import Image from "next/image";
 
 function Navbar() {
   const navLinks = [
@@ -41,7 +43,14 @@ function Navbar() {
           <div>
             <ul>
               <Link href='/'>
-                <h1>Logo</h1>
+                <img
+                  src={
+                    "http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.328acc3f.png&w=2048&q=75"
+                  }
+                  alt='Wines'
+                  width='100'
+                  height='100'
+                />
               </Link>
               <li>
                 <BsTelephoneFill className='inline-icon' />

@@ -18,10 +18,7 @@ export default async function page({ params: { slug } }) {
   return (
     <>
       <DetailedProduct data={product} />
-      <Products
-        data={similarProducts.splice(0, 4)}
-        title='Related Products 😎😎'
-      />
+      <Products data={similarProducts.splice(0, 4)} title='Related Products' />
     </>
   );
 }

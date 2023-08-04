@@ -1,16 +1,59 @@
 "use client";
-import React, { useRef, useState } from "react";
 import Image from "next/image";
 import { MdAddShoppingCart } from "react-icons/md";
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
 
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/navigation";
+import "swiper/css/thumbs";
+
+// import required modules
+import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 export default function DetailedProduct({ data }) {
-  //   console.log(data);
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
   return (
-    <section className='flex-container'>
+    <section className='flexs-container'>
       <div className='image-container'>
-        <div className='used-image'>
-          <Image src={data.image} alt={data.title} fill />
-        </div>
+        <Swiper
+          style={{
+            "--swiper-navigation-color": "#fff",
+            "--swiper-pagination-color": "#fff",
+          }}
+          spaceBetween={10}
+          navigation={false}
+          thumbs={{ swiper: thumbsSwiper }}
+          modules={[FreeMode, Navigation, Thumbs]}
+          className='mySwiper2'
+        >
+          {data.images.map((image) => {
+            return (
+              <SwiperSlide>
+                <img src={image} />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+        <Swiper
+          onSwiper={setThumbsSwiper}
+          spaceBetween={10}
+          slidesPerView={4}
+          freeMode={true}
+          watchSlidesProgress={true}
+          modules={[FreeMode, Navigation, Thumbs]}
+          className='mySwiper'
+        >
+          {data.images.map((image) => {
+            return (
+              <SwiperSlide>
+                <img src={image} />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
       </div>
       <div className='text-container'>
         <p>{data.keywords.splice(0, 2).join(", ")}💚</p>
@@ -27,53 +70,6 @@ export default function DetailedProduct({ data }) {
           </button>
         </div>
       </div>
-
-      {/* <div className='left-side-bar'>
-        <div className='category-list'>
-          <div className='show-all-cat-dropdown'>
-            <span>
-              Show All Category <GrFormNext />
-            </span>
-          </div>
-          <div className='category-title' href='#'>
-            Television
-          </div>
-          <ul>
-            <a href='#'>4K UHD TVS</a>
-            <a href='#'>Digital TVS</a>
-            <a href='#'>Smart TVS</a>
-            <a href='#'>ULED TVS</a>
-          </ul>
-        </div>
-        <div className='filter-section'>
-          <div className='electro_product_filter'>
-            <h3>Filters</h3>
-          </div>
-          <div className='brands'>
-            <h3>Brands</h3>
-            <form action='#' className='checkmark'>
-              <input
-                type='checkbox'
-                id='checkmark'
-                name='checkmark'
-                value='check'
-              />
-              <label for='checkmark'>Hiscense</label>
-            </form>
-          </div>
-        </div>
-      </div> */}
-      {/* <div className='main-site-map'>
-        <div className='categories'>
-          <Image src={data.image} alt={data.brief_description} fill />
-        </div>
-        <div className='real-text'>
-          <p>{data.keywords.splice(0, 2).join(", ")}💚</p>
-          <h1 className='main-heading'>{data.title}</h1>
-          <h3 className='main-description'>Description:</h3>
-          <h3>{data.detailed_description}</h3>
-        </div>
-      </div> */}
     </section>
   );
 }
