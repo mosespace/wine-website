@@ -13,6 +13,7 @@ import "swiper/css/thumbs";
 
 // import required modules
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
+import Link from "next/link";
 export default function DetailedProduct({ data }) {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   return (
@@ -63,12 +64,14 @@ export default function DetailedProduct({ data }) {
         <div className='price'>
           <span>$ {data.current_price}</span>
         </div>
-        <div className='order-now'>
-          <button>
-            <MdAddShoppingCart size={20} />
-            ORDER NOW
-          </button>
-        </div>
+        <Link href={`/booking-form/${data.slug}`}>
+          <div className='order-now'>
+            <button>
+              <MdAddShoppingCart size={20} />
+              ORDER NOW
+            </button>
+          </div>
+        </Link>
       </div>
     </section>
   );
