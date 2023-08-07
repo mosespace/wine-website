@@ -3,7 +3,6 @@ import Link from "next/link";
 import React from "react";
 import trialImage from "../../public/images/bg1.jpg";
 import Image from "next/image";
-import { useForm } from "react-hook-form";
 
 export default function BookingForm({ data }) {
   const {
