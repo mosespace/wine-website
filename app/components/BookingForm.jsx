@@ -62,7 +62,7 @@ export default function BookingForm({ data }) {
             <input type='date' id='checkout-date' name='checkout' required />
           </div>
           <div class='elem-group'>
-            <label for='message'>More Info Else?</label>
+            <label for='message'>More Info Else?;</label>
             <textarea
               id='message'
               {...register("visitor_message")}
