@@ -10,7 +10,11 @@ export default async function page({ params: { slug } }) {
   const prodId = product.id;
   return (
     <div>
-      <BookingForm data={product} />
+      <BookingForm
+        title={product.title}
+        img={product.image}
+        price={product.initial_price}
+      />
     </div>
   );
 }
