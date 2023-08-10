@@ -12,8 +12,12 @@ function SideBar({ categories }) {
           </span>
         </div>
         <ul>
-          {categories.map((category) => {
-            return <a href={`/categories/${category.slug}`}>{category.title}</a>;
+          {categories.map((category, id) => {
+            return (
+              <a key={id} href={`/categories/${category.slug}`}>
+                {category.title}
+              </a>
+            );
           })}
         </ul>
       </div>
