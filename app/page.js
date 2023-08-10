@@ -37,7 +37,7 @@ export default async function Home() {
 
       {/* All Products */}
       <Products title='Trending Wines' bg='#fca5a5' data={featuredProducts} />
-      <Products title='Spirits' bg='#99f6e4' data={allSpirits} />
+      <Products title='Spirits' bg='#f59e0b' data={allSpirits} />
       <Products title='Wedding wines' bg='#a8a29e' data={allWeddingWines} />
 
       {/* FAQs */}

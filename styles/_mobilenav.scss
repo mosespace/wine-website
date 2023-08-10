@@ -11,29 +11,29 @@
     display: block;
     position: fixed;
     padding: 1.5rem 1rem;
-    background-color: teal;
+    background-color: $main-sub-color;
     position: fixed;
     z-index: 230;
     bottom: 0;
 
-    .icons ul {
+    .icons {
       cursor: pointer;
-      padding: 0 2rem;
-      justify-content: space-between;
-      align-items: center;
-      display: flex;
-      font-size: 1.5rem;
-      :hover{
-        color: $main-color;
+      ul {
+        padding: 0 2rem;
+        font-size: 1.5rem;
+        justify-content: space-between;
+        display: flex;
+        li {
+          cursor: pointer;
+        }
       }
     }
   }
   @media screen and (max-width: 468px) {
-    .mobo-nav {
-      padding: 1.5rem 1.3rem;
-      .icons a {
-        padding: 0 2rem;
-        font-size: 1.4rem;
+    .icons {
+      cursor: pointer;
+      ul {
+        padding: 0 1rem;
       }
     }
   }

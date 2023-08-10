@@ -2,27 +2,28 @@ import React from "react";
 import { HiHome, HiOutlineShoppingCart, HiOutlineSearch } from "react-icons/hi";
 import { LuMoreHorizontal } from "react-icons/lu";
 import { FaList } from "react-icons/fa";
+import Link from "next/link";
 
 export default function MobileNav() {
   return (
     <div className='mobo-nav'>
       <div className='icons'>
         <ul>
-          <li>
+          <Link href='/'>
             <HiHome />
-          </li>
-          <li>
+          </Link>
+          <Link href='#'>
             <FaList />
-          </li>
-          <li>
+          </Link>
+          <Link href='#'>
             <HiOutlineShoppingCart />
-          </li>
-          <li>
+          </Link>
+          <Link href='#'>
             <HiOutlineSearch />
-          </li>
-          <li>
+          </Link>
+          <Link href='#'>
             <LuMoreHorizontal />
-          </li>
+          </Link>
         </ul>
       </div>
     </div>

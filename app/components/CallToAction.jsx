@@ -5,7 +5,7 @@ import { RiCustomerService2Fill } from "react-icons/ri";
 
 export default function CallToAction() {
   return (
-    <section>
+    <section className="calltoaction-section">
       <div className='call-to-action'></div>
       <div className='call-to-action-grid'>
         <div className='grid-1'>
