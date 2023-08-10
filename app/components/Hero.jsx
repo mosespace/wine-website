@@ -49,9 +49,9 @@ export default function Hero() {
             modules={[Autoplay, Pagination, Navigation]}
             className='mySwiper'
           >
-            {sliderContent.map((slide) => {
+            {sliderContent.map((slide, id) => {
               return (
-                <SwiperSlide>
+                <SwiperSlide key={id}>
                   <div className='slide-content'>
                     <div className='hero-text'>
                       {/* <img
