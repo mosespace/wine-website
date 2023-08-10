@@ -19,7 +19,7 @@ const baseUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
   : "";
 
-export default Email = () => (
+export const Email = () => (
   <Html>
     <Head />
     <Preview>Get your order summary, estimated delivery date and more</Preview>
@@ -274,6 +274,8 @@ export default Email = () => (
     </Body>
   </Html>
 );
+
+export default Email;
 
 const paddingX = {
   paddingLeft: "40px",
