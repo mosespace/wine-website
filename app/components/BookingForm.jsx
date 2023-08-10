@@ -21,7 +21,7 @@ export default function BookingForm({ title, img, price }) {
   // console.log(form);
 
   return (
-    <section>
+    <section className="booking-sec">
       <div className='booking-form'>
         <div className='booking-image'>
           <div className='product-img'>
@@ -37,7 +37,7 @@ export default function BookingForm({ title, img, price }) {
                 type='text'
                 id='name'
                 {...register("client_name")}
-                placeholder='John Doe'
+                placeholder='Eg; John Doe'
               />
             </div>
             <div className='elem-group'>
@@ -46,7 +46,7 @@ export default function BookingForm({ title, img, price }) {
                 type='email'
                 id='email'
                 {...register("vistor_name")}
-                placeholder='kiskayemoses@gmail.com'
+                placeholder='Eg; ifo@eanddwine.com'
               />
             </div>
             <div className='elem-group'>
@@ -55,7 +55,7 @@ export default function BookingForm({ title, img, price }) {
                 type='tel'
                 id='phone'
                 {...register("client_phone")}
-                placeholder='+256-770981193'
+                placeholder='Eg; +256-770981193'
               />
             </div>
             <div className='elem-group'>
@@ -64,21 +64,13 @@ export default function BookingForm({ title, img, price }) {
                 type='tel'
                 id='phone'
                 {...register("client_quantity")}
-                placeholder='1-10'
+                placeholder='Eg; 1-10'
               />
             </div>
             <hr />
             <div className='elem-group inlined'>
               <label>Delivery Date;</label>
               <input type='date' id='checkout-date' name={...register("client_pickupdate")} />
-            </div>
-            <div className='elem-group'>
-              <label>More Info Else?;</label>
-              <textarea
-                id='message'
-                {...register("visitor_message")}
-                placeholder='Tell us anything else that might be important.'
-              ></textarea>
             </div>
             <button type='submit'>
               Order Now
