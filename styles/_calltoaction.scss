@@ -1,14 +1,11 @@
-section {
-  color: black;
-  background-color: #d6d6d6;
-
+.calltoaction-section {
+  color: $black;
   .call-to-action-grid {
     gap: 1rem;
     display: grid;
     align-items: center;
     justify-content: center;
     padding-bottom: 3rem;
-
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
 
     .grid-1,
@@ -57,7 +54,7 @@ section {
 /*Media Querries-----------------------------------*/
 @media screen and (max-width: 1399.98px) {
   @media screen and (max-width: 1199.98px) {
-    section {
+    .calltoaction-section {
       max-width: 1199.98px;
       .call-to-action-grid {
         .grid-1,
@@ -73,7 +70,7 @@ section {
   }
 
   @media screen and (max-width: 991.98px) {
-    section {
+    .calltoaction-section {
       max-width: 991.98px;
       .call-to-action-grid {
         .grid-1,
@@ -91,7 +88,7 @@ section {
     }
   }
   @media screen and (max-width: 767.98px) {
-    section {
+    .calltoaction-section {
       max-width: 991.98px;
       .call-to-action-grid {
         .grid-1,
@@ -110,27 +107,16 @@ section {
     }
   }
   @media screen and (max-width: 575.98px) {
-    section {
+    .calltoaction-section {
+      padding: 2rem;
       max-width: 991.98px;
+      background-color: $grey;
       .call-to-action-grid {
-        // display: flex;
-        // flex-direction: column;
+        grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+
         .grid-1,
         .grid-2,
         .grid-3 {
-          // padding: 8rem;
-          // .icon {
-          //   font-size: 1.5rem;
-          //   padding: 0.8rem;
-          // }
-          // .icon-two {
-          //   font-size: 1.5rem;
-          //   padding: 0.8rem;
-          // }
-          // .icon-three {
-          //   font-size: 1.5rem;
-          //   padding: 0.8rem;
-          // }
           h1 {
             text-align: center;
             font-size: 1.2rem;
@@ -143,27 +129,12 @@ section {
     }
   }
   @media screen and (max-width: 468.98px) {
-    section {
+    .calltoaction-section {
       max-width: 991.98px;
       .call-to-action-grid {
-        // display: flex;
-        // flex-direction: column;
         .grid-1,
         .grid-2,
         .grid-3 {
-          // padding: 8rem;
-          // .icon {
-          //   font-size: 1.5rem;
-          //   padding: 0.8rem;
-          // }
-          // .icon-two {
-          //   font-size: 1.5rem;
-          //   padding: 0.8rem;
-          // }
-          // .icon-three {
-          //   font-size: 1.5rem;
-          //   padding: 0.8rem;
-          // }
           h1 {
             text-align: center;
             font-size: 1.2rem;
