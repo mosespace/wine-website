@@ -14,8 +14,8 @@ export default function Products({ title, bg, data }) {
       <div className='trending-grid'>
         {data?.splice(0, 5).map((product, i) => {
           return (
-            <Link href={`/product/${product.slug}`}>
-              <div className='card' key={i}>
+            <Link key={i} href={`/product/${product.slug}`}>
+              <div className='card'>
                 <div className='upper-icons'>
                   <div className='span-class'>
                     <span className='percentage'>-5%</span>
