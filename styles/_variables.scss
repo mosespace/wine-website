@@ -1,16 +1,12 @@
-$main-sub-color: #e11d48;
-$main-color: #f59e0b;
+$main-sub-color: teal;
+$main-color: #ff4162;
 $mobile-nav: #2e282c;
 $primary: #fff;
 $grey: #dadada;
-$black: #020617;
+$black: #000000;
 $brown: #2e282c;
-// $main-sub-color: teal;
-// $main-color: #ff4162;
-// $mobile-nav: #2e282c;
-// $primary: #fff;
-// $grey: #dadada;
-// $black: #000000;
+// $background-color: linear-gradient(to right, #f878ff, #ffda9e, #ffffff);
+$background-image: linear-gradient(red, yellow);
 
 .swiper-button-next {
   display: none;

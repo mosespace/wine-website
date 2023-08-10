@@ -1,10 +1,10 @@
-.faq-section {
+section {
   background-color: #d6d6d6;
   .question {
-    background-color: $primary;
+    background-color: #fff;
     border-radius: 5px;
     padding: 2rem;
-    color: $black;
+    color: black;
     h1 {
       font-size: 2rem;
       font-weight: 700;
@@ -25,44 +25,4 @@
       overflow: hidden;
     }
   }
-}
-
-/*Media Querries-----------------------------------*/
-@media screen and (max-width: 1399.98px) {
-  @media screen and (max-width: 575.98px) {
-    .faq-section {
-      padding: 2rem;
-    }
-  }
-  @media screen and (max-width: 467.98px) {
-    .faq-section {
-      background-color: #d6d6d6;
-      .question {
-        background-color: $primary;
-        border-radius: 5px;
-        padding: 2rem;
-        color: $black;
-        h1 {
-          font-size: 1.2rem;
-          font-weight: 700;
-          &:after {
-            content: " ";
-            display: block;
-            border: 2px solid $main-color;
-            width: 15%;
-          }
-        }
-
-        .line-clamp {
-          padding-top: 0.5rem;
-          max-width: 1430px;
-          display: -webkit-box;
-          -webkit-line-clamp: 3;
-          -webkit-box-orient: vertical;
-          overflow: hidden;
-        }
-      }
-    }
-  }
-
 }

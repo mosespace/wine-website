@@ -1,6 +1,6 @@
 .trending-section {
-  color: $black;
-  background-color: $grey;
+  color: black;
+  background-color: #d6d6d6;
 
   .trending-title {
     display: flex;
@@ -10,16 +10,16 @@
       background-color: $primary;
       padding: 0.5rem 1rem;
       border-radius: 30px;
-      font-size: 0.8rem;
+      font-size: .8rem;
       &:hover {
         color: #fff;
         background-color: transparent;
-        border: 1px Solid $main-color;
+        border: 1px Solid red;
       }
     }
   }
   h1 {
-    color: $black;
+    color: $primary;
     padding-bottom: 2rem;
     font-size: 1.2rem;
     font-weight: 700;
@@ -81,6 +81,7 @@
         align-items: center;
         display: flex;
         padding-top: 1rem;
+        // gap: 7rem;
         justify-content: space-between;
 
         .buy-now {
@@ -141,11 +142,10 @@
       }
     }
   }
-  @media screen and (max-width: 467px) {
+  @media screen and (max-width: 468px) {
     .trending-section {
-      margin-bottom: 0;
       padding: 0 2rem;
-      color: $black;
+      color: black;
 
       h1 {
         padding: 2rem 0;
@@ -154,26 +154,16 @@
 
       .trending-grid {
         gap: 1rem;
-        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
 
         .card {
-          height: 100%;
-          overflow: hidden;
-          padding: 1rem;
+          padding: 2rem;
+          // background-color: green;
           .upper-icons {
-            display: flex;
-            justify-content: space-between;
             padding-bottom: 1rem;
-            .heart {
-              font-size: 1rem;
-              color: $black;
-              cursor: pointer;
-            }
-
+            gap: 10.5rem;
             .span-class {
-              display: flex;
-              justify-content: space-between;
-              font-size: 0.6rem;
+              font-size: 1rem;
               span {
                 background-color: #6e2dd6;
               }
@@ -183,41 +173,35 @@
             }
           }
           p {
-            display: none;
+            font-size: 1rem;
+            // max-width: 200px;
           }
 
           h2 {
-            padding: 0.7rem 0;
+            padding-top: 10%;
             font-weight: 600;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
           }
           .image {
-            height: 100px;
             max-width: 100%;
-            img {
-              position: relative;
-              width: 60%;
-              height: 60%;
-              object-fit: cover;
-            }
+          }
+
+          img {
+            position: relative;
+            width: 60%;
+            height: 60%;
+            object-fit: cover;
           }
 
           .button-component {
-            padding-top: 0.8rem;
-            gap: 1rem;
-            h3 {
-              font-size: 0.6rem;
-            }
+            gap: 9.5rem;
+
             .buy-now {
-              padding: 0.2rem 0.8rem;
               gap: 0.5rem;
             }
           }
         }
       }
-    }
-    .trending-section.mg-remove {
-      margin: 1rem 0;
     }
   }
 }
