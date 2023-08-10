@@ -1,340 +1,381 @@
-.booking-form {
+.top-nav {
   display: flex;
+  flex: 1;
+  gap: 30rem;
+  top: 0;
+  max-width: 100%;
+  padding: 1rem 0;
   align-items: center;
-  justify-content: space-around;
-  background-color: $grey;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-  .booking-image {
-    position: relative;
-    width: 40%;
-    height: 700px;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-  }
-  .booking-info {
-    h1 {
-      color: $main-color;
-      font-size: 1.6rem;
-      font-weight: 700;
-      padding-bottom: 1rem;
-      border-bottom-width: 10%;
-      border-bottom: 2px Solid $main-color;
-    }
-    width: 30%;
-    border-radius: 20px;
-    color: $primary;
-    background-color: $black;
-    padding: 1rem 2rem;
+  justify-content: center;
+  color: $black;
+  background-color: $primary;
+  overflow: hidden;
 
-    label {
-      border: 0;
-      padding: 1rem 0;
-      display: block;
-      padding-bottom: 1.2%;
-      font-size: 1.25em;
-    }
-
-    input,
-    select,
-    textarea {
-      color: $black;
-      outline: 0;
-      border: 0;
-      border-radius: 2px;
-      box-sizing: border-box;
-      font-size: 1.1rem;
-      width: 100%;
-      padding: 10px;
-    }
-
-    button {
-      margin-top: 1rem;
-      padding: 0.6rem 1.3rem;
-      background: $main-color;
-      border: none;
-      color: $primary;
-      font-size: 1.25em;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-  }
-}
-
-@media screen and (max-width: 1399.98px) {
-  @media screen and (max-width: 1199.98px) {
-    .booking-sec {
-      padding: 1rem;
-    }
-    .booking-form {
-      display: flex;
+  .flex-works {
+    ul {
+      font-size: 1rem;
       align-items: center;
-      justify-content: space-around;
-      background-color: $grey;
-      padding: 0;
-      border-radius: 2px;
-      box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-      .booking-image {
+      gap: 1rem;
+      display: flex;
+      list-style: none;
+      li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        // .logo-nav {
+        //   position: absolute;
+        //   height: 100px;
+        //   width: 100px;
+        //   img {
+        //     width: 100%;
+        //     height: 100%;
+        //     object-fit: contain;
+        //   }
+        // }
+      }
+      .logo-nav {
         position: relative;
-        width: 40%;
-        height: 700px;
+        height: 100px;
+        height: 100px;
         img {
           width: 100%;
           height: 100%;
-          object-fit: contain;
+          object-fit: cover;
         }
       }
-      .booking-info {
-        h1 {
-          color: $main-color;
-          font-size: 1.6rem;
-          font-weight: 700;
-          padding-bottom: 1rem;
-          border-bottom-width: 10%;
-          border-bottom: 2px Solid $main-color;
-        }
-        width: 30%;
-        border-radius: 20px;
-        color: $primary;
-        background-color: $black;
-        padding: 1rem 2rem;
+      h1 {
+        max-width: 100px;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        font-weight: 600;
+      }
 
-        label {
-          border: 0;
-          padding: 1rem 0;
-          display: block;
-          padding-bottom: 1.2%;
-          font-size: 1.25em;
+      .search-btn {
+        color: $black;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.4rem 1.3rem;
+        align-items: center;
+        background-color: $main-sub-color;
+        border-radius: 10px;
+        input {
+          border: none; /* This removes the border when the input is focused */
+          outline: none; /* This removes the outline when the input is focused */
         }
-
-        input,
-        select,
-        textarea {
-          color: $black;
-          outline: 0;
-          border: 0;
-          border-radius: 2px;
-          box-sizing: border-box;
-          font-size: 1.1rem;
-          width: 100%;
-          padding: 10px;
+        ::placeholder {
+          color: $primary; /* This changes the color of the placeholder text! */
         }
 
-        button {
-          margin-top: 1rem;
-          padding: 0.6rem 1.3rem;
-          background: $main-color;
-          border: none;
+        .icon {
+          font-size: 1.5rem;
           color: $primary;
-          font-size: 1.25em;
-          border-radius: 4px;
-          cursor: pointer;
+          padding: 0;
+          font-weight: 700px;
+        }
+
+        input.search-field {
+          border: none;
+        }
+        .search-field {
+          max-width: 150px;
+          border: none;
+          background-color: transparent;
+          color: $primary;
+          padding: 0.2rem;
         }
       }
     }
   }
+  .social-media {
+    align-items: center;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    gap: 30px;
+    color: $black;
+    .icon2 {
+      color: $black;
+      font-size: 1.5rem;
+    }
+    .pay-now {
+      color: $primary;
+      align-items: center;
+      padding: 0.4rem 1.3rem;
+      background-color: $main-sub-color;
+      display: flex;
+      gap: 1rem;
+      border-radius: 10px;
+      width: 150px;
+
+      .icon2 {
+        font-size: 1.5rem;
+      }
+    }
+    .pay-now:hover {
+      background-color: transparent;
+      border: 2px solid $main-color;
+      color: $black;
+    }
+  }
+
+  .humberg {
+    display: none;
+  }
+}
+
+.top-nav.scrolled {
+  color: $primary;
+  background-color: $black;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  .icon2 {
+    color: $primary;
+  }
+}
+
+//  Media Queries For The TopNavBar
+@media screen and (max-width: 1399.98px) {
+  .top-nav {
+    max-width: 1399.98px;
+    flex: 0;
+    .flex-works {
+      ul {
+        h1 {
+          max-width: 130px;
+          font-size: 1.5rem;
+        }
+
+        .search-btn {
+          gap: 0.2rem;
+          padding: 0.4rem 1rem;
+          .icon {
+            font-size: 1rem;
+            font-weight: 800px;
+          }
+        }
+      }
+    }
+
+    .social-media {
+      color: $primary;
+      font-size: 1rem;
+      .icon2 {
+        font-size: 1.3rem;
+      }
+      .pay-now {
+        .icon2 {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1199.98px) {
+    .top-nav {
+      gap: 10rem;
+      max-width: 1199.98px;
+      .flex-works {
+        ul {
+          h1 {
+            max-width: 130px;
+            font-size: 1.5rem;
+          }
+          .search-btn {
+            padding: 0.2rem 0.7rem;
+            .icon {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+
+      .social-media {
+        font-weight: 600;
+        font-size: 13.5px;
+        gap: 20px;
+        .icon2 {
+          font-size: 1.3rem;
+        }
+        .pay-now {
+          padding: 0.4rem 1.4rem;
+          .icon2 {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+
   @media screen and (max-width: 991.98px) {
-    .booking-sec {
-      padding: 1rem;
-    }
-    .booking-form {
-      display: flex;
-      .booking-image {
-        position: relative;
-        width: 30%;
-        height: 700px;
-      }
-      .booking-info {
-        h1 {
-          font-size: 1.6rem;
-          font-weight: 700;
-          padding-bottom: 1rem;
-          border-bottom-width: 10%;
-        }
-        width: 40%;
-        border-radius: 20px;
-        padding: 1rem 2rem;
-
-        label {
-          padding: 1rem 0;
-          padding-bottom: 1.2%;
-          font-size: 1.25em;
-        }
-
-        input,
-        select,
-        textarea {
-          border-radius: 2px;
-          font-size: 1.1rem;
-          width: 100%;
-          padding: 10px;
-        }
-
-        button {
-          margin-top: 1rem;
-          padding: 0.6rem 1.3rem;
-          font-size: 1.25em;
-          border-radius: 4px;
+    .top-nav {
+      gap: 30rem;
+      max-width: 991.98px;
+      .flex-works {
+        ul {
+          li {
+            display: none;
+          }
+          .search-btn {
+            display: none;
+          }
         }
       }
     }
   }
-  @media screen and (max-width: 898.98px) {
-  }
-  @media screen and (max-width: 768.98px) {
-  }
-  @media screen and (max-width: 667.98px) {
-    .booking-sec {
-      padding: 1rem;
-    }
-    .booking-form {
-      padding: 2rem;
-      display: flex;
-      flex-direction: column-reverse;
-      .booking-image {
-        position: relative;
-        width: 100%;
-        height: 300px;
-      }
-      .booking-info {
-        h1 {
-          font-size: 1.6rem;
-          font-weight: 700;
-          padding-bottom: 1rem;
-          border-bottom-width: 10%;
-        }
-        width: 80%;
-        border-radius: 20px;
-        padding: 1rem 2rem;
 
-        label {
-          padding: 1rem 0;
-          padding-bottom: 1.2%;
-          font-size: 1.25em;
-        }
-
-        input,
-        select,
-        textarea {
-          border-radius: 2px;
-          font-size: 1.1rem;
-          width: 100%;
-          padding: 10px;
-        }
-
-        button {
-          margin-top: 1rem;
-          padding: 0.6rem 1.3rem;
-          font-size: 1.25em;
-          border-radius: 4px;
+  @media screen and (max-width: 767.98px) {
+    .top-nav {
+      gap: 20rem;
+      max-width: 767.98px;
+      .flex-works {
+        ul {
+          li {
+            display: none;
+          }
+          h1 {
+            max-width: 150px;
+            font-size: 1.5rem;
+          }
+          .search-btn {
+            display: none;
+          }
         }
       }
     }
   }
   @media screen and (max-width: 575.98px) {
-    .booking-sec {
-      padding: 1rem;
-      margin-top: 3rem;
-    }
-  }
-  @media screen and (max-width: 381.98px) {
-    .booking-sec {
-      margin-top: 3rem;
-    }
-    .booking-form {
-      padding: 0;
-      display: flex;
-      flex-direction: column-reverse;
-      .booking-image {
-        position: relative;
-        width: 100%;
-        height: 200px;
-      }
-      .booking-info {
-        h1 {
-          font-size: 1.6rem;
-          font-weight: 700;
-          padding-bottom: 1rem;
-          border-bottom-width: 10%;
-        }
-        width: 100%;
-        border-radius: 20px;
-        padding: 1rem;
-
-        label {
-          padding: 1rem 0;
-          padding-bottom: 1.2%;
-          font-size: 1.25em;
-        }
-
-        input,
-        select,
-        textarea {
-          border-radius: 2px;
-          font-size: 1.1rem;
-          width: 100%;
-          padding: 10px;
-        }
-
-        button {
-          margin-top: 1rem;
-          padding: 0.6rem 1.3rem;
-          font-size: 1.25em;
-          border-radius: 4px;
+    .top-nav {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      z-index: 230;
+      gap: 15rem;
+      max-width: 575.98px;
+      .flex-works {
+        ul {
+          li {
+            display: none;
+          }
+          h1 {
+            max-width: 150px;
+            font-size: 1.5rem;
+          }
+          .search-btn {
+            display: none;
+          }
         }
       }
     }
   }
-  @media screen and (max-width: 467.98px) {
-    .booking-sec {
-      padding: 1rem;
-      margin: 3rem 0;
+  @media screen and (max-width: 468px) {
+    .top-nav {
+      gap: 6rem;
+      max-width: 468px;
+
+      .flex-works {
+        ul {
+          li {
+            display: none;
+          }
+          .search-btn {
+            display: none;
+          }
+        }
+      }
     }
-    .booking-form {
-      padding: 2rem;
-      display: flex;
-      gap: 2rem;
-      flex-direction: column-reverse;
-      .booking-image {
-        position: relative;
-        width: 100%;
-        height: 300px;
-      }
-      .booking-info {
-        h1 {
-          font-size: 1.6rem;
-          font-weight: 700;
-          padding-bottom: 1rem;
-          border-bottom-width: 10%;
-        }
-        width: 100%;
-        border-radius: 20px;
-        padding: 1rem 2rem;
+  }
 
-        label {
-          padding: 1rem 0;
-          padding-bottom: 1.2%;
-          font-size: 1.25em;
-        }
-
-        input,
-        select,
-        textarea {
-          border-radius: 2px;
-          font-size: 1.1rem;
-          width: 100%;
-          padding: 10px;
-        }
-
-        button {
-          margin-top: 1rem;
-          padding: 0.6rem 1.3rem;
-          font-size: 1.25em;
-          border-radius: 4px;
+  @media screen and (max-width: 381px) {
+    .top-nav {
+      gap: 4.2rem;
+      max-width: 468px;
+      .flex-works {
+        ul {
+          li {
+            display: none;
+          }
+          .search-btn {
+            display: none;
+          }
         }
       }
+    }
+  }
+}
+
+.down-navbar {
+  color: $primary;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%;
+  background: $main-color;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 230;
+  ul {
+    display: flex;
+    gap: 6rem;
+    justify-content: center;
+    li {
+      cursor: pointer;
+      &:hover {
+        color: black;
+      }
+    }
+  }
+}
+
+//  Media Queries For The TopNavBar
+@media screen and (max-width: 1399.98px) {
+  .down-navbar {
+    max-width: 1399.98px;
+    padding: 0.8rem;
+    ul {
+      gap: 4rem;
+    }
+  }
+  @media screen and (max-width: 1199.98px) {
+    .down-navbar {
+      max-width: 1199.98px;
+      padding: 0.8rem;
+      ul {
+        gap: 2.5rem;
+      }
+    }
+  }
+  @media screen and (max-width: 991.98px) {
+    .down-navbar {
+      max-width: 991.98px;
+      ul {
+        gap: 2rem;
+      }
+    }
+  }
+  @media screen and (max-width: 898px) {
+    .down-navbar {
+      max-width: 898px;
+      padding: 0.8rem;
+      ul {
+        gap: 1.5rem;
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .down-navbar {
+      max-width: 768px;
+      padding: 0.8rem;
+      ul {
+        gap: 1rem;
+      }
+    }
+  }
+  @media screen and (max-width: 668px) {
+    .down-navbar {
+      display: none;
+      max-width: 668px;
+      padding: 0.8rem;
     }
   }
 }
