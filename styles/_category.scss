@@ -1,9 +1,11 @@
 .category-listing {
   max-width: 100%;
-  // margin-top: 0.7rem;
   padding: 1.5rem 5rem;
-  background-color: teal;
-  color: black;
+  background-color: $main-sub-color;
+  color: $black;
+  @media (max-width: 415px) {
+    padding: 1.5rem;
+  }
 
   .categorySwiper {
     max-width: 100%;
@@ -22,7 +24,7 @@
           padding: 1.5rem;
         }
         @media (max-width: 415px) {
-          padding: 2rem 2.5rem;
+          padding: 2rem 0rem;
         }
         @media (max-width: 366px) {
           padding: 0.5rem 0.8rem;
@@ -57,4 +59,8 @@
       }
     }
   }
+}
+
+.swiper-pagination {
+  display: none !important;
 }
