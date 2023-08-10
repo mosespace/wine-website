@@ -7,12 +7,9 @@
   .image-container {
     width: 50%;
     height: 100%;
-    .used-image {
-    }
     .swiper {
       width: 100%;
       height: 70%;
-      // background-color: red;
     }
     .swiper-slide {
       text-align: center;
@@ -20,7 +17,6 @@
     .swiper-slide img {
       display: block;
       width: 100%;
-      // height: 100%;
       object-fit: contain;
     }
 
@@ -204,7 +200,7 @@
   @media screen and (max-width: 467.98px) {
     .flexs-container {
       flex-direction: column-reverse;
-      padding: 1rem;
+      padding: 2rem;
       .image-container {
         width: 100%;
         .used-image {
@@ -216,7 +212,7 @@
         width: 100%;
         height: 50%;
         border-radius: 12px;
-        padding: 2rem;
+        padding: 1rem;
 
         .main-heading {
           font-size: 2rem;
