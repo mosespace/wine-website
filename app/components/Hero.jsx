@@ -31,19 +31,19 @@ export default function Hero() {
     },
   ];
   return (
-    <section className='hero-section'>
+    <section className='real-hero-section'>
       <div className='hero-section'>
         <div className='hero-slider'>
           <Swiper // This is the whole Swiper Section
             spaceBetween={0}
             centeredSlides={true}
             autoplay={{
-              delay: 4000,
+              delay: 5000,
               disableOnInteraction: false,
             }}
             pagination={{
               clickable: true,
-              type: "progressbar",
+              // type: "progressbar",
             }}
             navigation={true}
             modules={[Autoplay, Pagination, Navigation]}
@@ -54,14 +54,14 @@ export default function Hero() {
                 <SwiperSlide>
                   <div className='slide-content'>
                     <div className='hero-text'>
-                      <img
+                      {/* <img
                         src={
                           "http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.328acc3f.png&w=2048&q=75"
                         }
                         alt='Wines'
                         width='100'
                         height='100'
-                      />
+                      /> */}
                       <h1>{slide.text}</h1>
                       <a href={slide.path} className='read-more'>
                         Learn More <AiOutlineArrowRight />
