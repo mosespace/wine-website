@@ -12,12 +12,12 @@ import { FreeMode, Pagination, Navigation } from "swiper/modules";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function CategoryListing({ data}) {
+export default function CategoryListing({ data }) {
   return (
     <section className='category-listing'>
       <div className='real-section'>
         <Swiper
-          slidesPerView={1}
+          slidesPerView={2}
           spaceBetween={10}
           freeMode={true}
           pagination={{
