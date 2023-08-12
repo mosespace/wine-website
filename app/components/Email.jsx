@@ -19,7 +19,7 @@ const baseUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
   : "";
 
-export const Email = () => (
+export const Email = ({ data }) => (
   <Html>
     <Head />
     <Preview>Get your order summary, estimated delivery date and more</Preview>
@@ -32,7 +32,7 @@ export const Email = () => (
               <Text style={track.number}>1ZV218970300071628</Text>
             </Column>
             <Column align='right'>
-              <Link style={global.button}>Track Package</Link>
+              <Link style={global.button}>{data.client_name}</Link>
             </Column>
           </Row>
         </Section>
