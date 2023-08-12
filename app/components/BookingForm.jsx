@@ -2,15 +2,29 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { useForm } from "react-hook-form";
+import toast, { Toaster } from 'react-hot-toast';
 
-export default function BookingForm({ title, img, price }) {
+export  default  function BookingForm({ title, img, price }) {
+  const sucess = () => toast.success('Your Order Has Been Sent Successfully😎!')
   const { handleSubmit, register } = useForm();
   const [form, setFormData] = useState({
     productTitle: title,
     productImage: img,
   });
 
-  function onSubmit(data) {
+  async function onSubmit(data) {
+    const orderData = {
+      prodTitle: title,
+      productImage: img,
+      productPrice: price,
+      ...data,
+    };
+  
+    await fetch('/api/email', {
+      method: 'POST',
+      body: JSON.stringify(orderData),
+    });
+  
     const initialPrice = price * Number(data.client_quantity);
     setFormData((prevData) => ({
       ...data,
@@ -18,8 +32,8 @@ export default function BookingForm({ title, img, price }) {
       finalPrice: initialPrice,
     }));
   }
-  // console.log(form);
-
+  
+  
   return (
     <section className="booking-sec">
       <div className='booking-form'>
@@ -72,7 +86,7 @@ export default function BookingForm({ title, img, price }) {
               <label>Delivery Date;</label>
               <input type='date' id='checkout-date' name={...register("client_pickupdate")} />
             </div>
-            <button type='submit'>
+            <button type='submit' onClick={sucess}>
               Order Now
             </button>
           </form>
