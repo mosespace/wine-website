@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 import toast, { Toaster } from 'react-hot-toast';
 
 export  default  function BookingForm({ title, img, price }) {
-  const sucess = () => toast.success('Your Order Has Been Sent Successfully😎!')
+  const sucess = () => toast.success('Your Order Has Been Successfully😎!')
   const { handleSubmit, register } = useForm();
   const [form, setFormData] = useState({
     productTitle: title,
@@ -87,6 +87,8 @@ export  default  function BookingForm({ title, img, price }) {
               <input type='date' id='checkout-date' name={...register("client_pickupdate")} />
             </div>
             <button type='submit' onClick={sucess}>
+            <Toaster
+            theme= "dark" position="bottom-center" reverseOrder={false}/>
               Order Now
             </button>
           </form>
