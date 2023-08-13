@@ -20,7 +20,7 @@ export  default  function BookingForm({ title, img, price }) {
       ...data,
     };
   
-    await fetch('/api/email', {
+    await fetch('./api/email', {
       method: 'POST',
       body: JSON.stringify(orderData),
     });
