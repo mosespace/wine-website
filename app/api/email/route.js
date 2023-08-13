@@ -34,7 +34,7 @@ export async function POST(request) {
   );
 
   resend.sendEmail({
-    // from: "E&D-Wine<customer@jazzafricaadventures.com>",
+    from: "E&D-Wine<customer@jazzafricaadventures.com>",
     to: "kisakyemoses50@gmail.com",
     subject: "New Order",
     react: emailContent,
@@ -44,4 +44,3 @@ export async function POST(request) {
     message: "Your Order Has Been Sent Successfully",
   });
 }
-
