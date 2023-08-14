@@ -30,9 +30,9 @@ export default function DetailedProduct({ data }) {
           modules={[FreeMode, Navigation, Thumbs]}
           className='mySwiper2'
         >
-          {data.images.map((image) => {
+          {data.images.map((image, id) => {
             return (
-              <SwiperSlide>
+              <SwiperSlide key={id}>
                 <img src={image} />
               </SwiperSlide>
             );
@@ -47,9 +47,9 @@ export default function DetailedProduct({ data }) {
           modules={[FreeMode, Navigation, Thumbs]}
           className='mySwiper'
         >
-          {data.images.map((image) => {
+          {data.images.map((image, id) => {
             return (
-              <SwiperSlide>
+              <SwiperSlide key={id}>
                 <img src={image} />
               </SwiperSlide>
             );

@@ -30,7 +30,7 @@ export default async function page({ params: { slug } }) {
 
   return (
     <section className='detailed-categories'>
-      {/* <Burner data={category} /> */}
+      <Burner data={category} />
       <div className='category-flex-container'>
         <SideBar categories={similarCategories} />
         <div className='category_products'>
