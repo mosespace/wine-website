@@ -88,8 +88,8 @@ function Navbar() {
         <div className='social-media'>
           <BsCart3 className='icon2' />
           <a className='pay-now' href='#'>
-            <BsPaypal className='icon3' size={20} />
-            Pay Now
+            {/* <BsPaypal className='icon3' size={20} /> */}
+            Hot Deals
           </a>
         </div>
         <div className='humberg'>
