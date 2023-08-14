@@ -35,7 +35,7 @@ export  default  function BookingForm({ title, img, price }) {
   
   
   return (
-    <section className="booking-sec">
+    <section className="booking-section">
       <div className='booking-form'>
         <div className='booking-image'>
           <div className='product-img'>

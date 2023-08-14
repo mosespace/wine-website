@@ -1,9 +1,13 @@
+.booking-section {
+  padding: 1.6rem;
+}
 .booking-form {
   display: flex;
+  padding: 0 5rem;
   .booking-image {
     width: 70%;
-    position: relative;
     height: 700px;
+    position: relative;
     img {
       width: 100%;
       height: 100%;
@@ -11,56 +15,35 @@
     }
   }
   .booking-info {
+    width: 70%;
+    color: $primary;
+    padding: 1rem 2rem;
+    background-color: $black;
     h1 {
+      font-weight: 500;
       font-size: 1.5rem;
       padding-bottom: 1rem;
       border-bottom-width: 10%;
       border-bottom: 2px Solid $main-color;
     }
-    width: 30%;
-    border-radius: 20px;
-    color: $main-sub-color;
-    background-color: $primary;
-    padding: 1rem 2rem;
-    .elm-group {
-      font-size: 1.5rem;
-      input {
-        padding: 1rem;
-      }
-    }
-
-    div.elem-group.inlined {
-      width: 100%;
-      padding: 0%;
-      display: inline-block;
-    }
 
     label {
-      padding: 1rem 0;
       display: block;
-      font-family: "Nanum Gothic";
-      padding-bottom: 10px;
+      padding: 1rem 0;
       font-size: 1.25em;
+      padding-bottom: 10px;
     }
 
     input,
     select,
     textarea {
-      border-radius: 2px;
-      border: 2px solid #777;
-      box-sizing: border-box;
-      font-size: 1.5rem;
-      font-family: "Nanum Gothic";
+      border: 0;
+      outline: 0;
       width: 100%;
       padding: 10px;
-    }
-
-    textarea {
-      height: 250px;
-    }
-
-    hr {
-      border: 1px dotted #ccc;
+      color: $black;
+      font-size: 1.3rem;
+      box-sizing: border-box;
     }
 
     button {
@@ -68,10 +51,241 @@
       padding: 0.6rem 1.3rem;
       background: $main-color;
       border: none;
-      color: white;
+      color: $primary;
       font-size: 1.25em;
       border-radius: 4px;
       cursor: pointer;
+    }
+  }
+}
+
+/*Media Querries-----------------------------------*/
+@media screen and (max-width: 1399.98px) {
+  @media screen and (max-width: 1199.98px) {
+    .booking-section {
+      padding: 2.5rem;
+    }
+    .booking-form {
+      display: flex;
+      padding: 0;
+      background-color: $primary;
+      .booking-image {
+        width: 100%;
+        height: 400px;
+        position: relative;
+        background-color: $main-color;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      .booking-info {
+        h1 {
+          font-weight: 500;
+          font-size: 1.5rem;
+          padding-bottom: 0.6rem;
+          border-bottom-width: 10%;
+          border-bottom: 2px Solid $main-color;
+        }
+        width: 100%;
+        color: $primary;
+        border-radius: 0;
+        padding: 1rem 2rem;
+        background-color: $black;
+
+        label {
+          padding: 1rem 0;
+          font-size: 1.25em;
+          padding-bottom: 10px;
+        }
+
+        input,
+        select,
+        textarea {
+          border: 0;
+          outline: 0;
+          width: 100%;
+          padding: 0.4rem;
+          font-size: 1.2rem;
+          border-radius: 2px;
+        }
+
+        button {
+          margin-top: 1rem;
+          font-size: 1.25em;
+          border-radius: 4px;
+          padding: 0.6rem 1.3rem;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 767.98px) {
+    .booking-section {
+      padding: 1.6rem;
+      margin-bottom: 3.5rem;
+    }
+    .booking-form {
+      display: flex;
+      margin-top: 2rem;
+      background-color: $primary;
+      .booking-image {
+        background-color: $main-color;
+        width: 100%;
+        height: 400px;
+        position: relative;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      .booking-info {
+        h1 {
+          font-weight: 500;
+          font-size: 1.5rem;
+          padding-bottom: 0.6rem;
+          border-bottom-width: 10%;
+          border-bottom: 2px Solid $main-color;
+        }
+        width: 100%;
+        color: $primary;
+        border-radius: 0;
+        padding: 1rem 2rem;
+        background-color: $black;
+
+        label {
+          display: block;
+          padding: 1rem 0;
+          font-size: 1.25em;
+          padding-bottom: 10px;
+        }
+
+        input,
+        select,
+        textarea {
+          border: 0;
+          outline: 0;
+          width: 100%;
+          color: $black;
+          padding: 0.4rem;
+          font-size: 1.2rem;
+          border-radius: 2px;
+          box-sizing: border-box;
+        }
+
+        button {
+          border: none;
+          cursor: pointer;
+          color: $primary;
+          margin-top: 1rem;
+          font-size: 1.25em;
+          border-radius: 4px;
+          padding: 0.6rem 1.3rem;
+          background: $main-color;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 575.98px) {
+    .booking-section {
+      padding: 1.6rem;
+      margin-bottom: 3.5rem;
+    }
+    .booking-form {
+      display: flex;
+      margin-top: 2rem;
+      flex-direction: column;
+      .booking-image {
+        background-color: transparent;
+        width: 100%;
+        height: 400px;
+        position: relative;
+      }
+      .booking-info {
+        h1 {
+          font-weight: 500;
+          font-size: 1.5rem;
+          padding-bottom: 0.6rem;
+          border-bottom-width: 10%;
+        }
+        width: 100%;
+        padding: 1rem 2rem;
+
+        label {
+          padding: 1rem 0;
+          font-size: 1.25em;
+          padding-bottom: 10px;
+        }
+
+        input,
+        select,
+        textarea {
+          width: 100%;
+          padding: 0.4rem;
+          font-size: 1.2rem;
+        }
+
+        button {
+          margin-top: 1rem;
+          font-size: 1.25em;
+          padding: 0.6rem 1.3rem;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 467.98px) {
+    .booking-section {
+      padding: 1.6rem;
+      margin-bottom: 3.5rem;
+    }
+    .booking-form {
+      display: flex;
+      margin-top: 2rem;
+      flex-direction: column;
+      .booking-image {
+        width: 100%;
+        height: 400px;
+        position: relative;
+      }
+      .booking-info {
+        h1 {
+          font-weight: 500;
+          font-size: 1.5rem;
+          padding-bottom: 0.6rem;
+          border-bottom-width: 10%;
+        }
+        width: 100%;
+        padding: 1rem 2rem;
+
+        label {
+          padding: 1rem 0;
+          font-size: 1.25em;
+          padding-bottom: 10px;
+        }
+
+        input,
+        select,
+        textarea {
+          width: 100%;
+          color: $black;
+          padding: 0.4rem;
+          font-size: 1.2rem;
+        }
+
+        button {
+          margin-top: 1rem;
+          font-size: 1.25em;
+          border-radius: 4px;
+          padding: 0.6rem 1.3rem;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 381.98px) {
+    .booking-section {
+      padding: 2rem;
+      margin-bottom: 3.5rem;
     }
   }
 }
