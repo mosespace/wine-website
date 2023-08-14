@@ -6,7 +6,11 @@ import Link from "next/link";
 
 export default function Products({ title, bg, data }) {
   return (
-    <section className='trending-section mg-remove' style={{ background: bg }}>
+    <section
+      id='trends'
+      className='trending-section mg-remove'
+      style={{ background: bg }}
+    >
       <div className='trending-title'>
         <h1>{title}</h1>
         <a href='#'>See More</a>
