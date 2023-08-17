@@ -1,5 +1,9 @@
 import React from "react";
 
 export default function Skeleton() {
-  return <span class='loader'></span>;
+  return (
+    <section>
+      <span class='loader'></span>;
+    </section>
+  );
 }
