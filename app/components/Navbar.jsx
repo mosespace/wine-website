@@ -73,24 +73,25 @@ function Navbar() {
                 +(256) 782654491
               </li>
               <li>
-                <a className='search-btn' href='#'>
+                <Link className='search-btn' href='#'>
                   <BsSearch className='icon' />
                   <input
                     className='search-field'
                     type='text'
                     placeholder='Search...'
                   />
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
         </div>
         <div className='social-media'>
           <BsCart3 className='icon2' />
-          <a className='pay-now' href='#trends'>
+          (0)
+          <Link className='pay-now' href='#trends'>
             {/* <BsPaypal className='icon3' size={20} /> */}
             Hot Deals
-          </a>
+          </Link>
         </div>
         <div className='humberg'>
           <AiOutlineMenu size={30} />
