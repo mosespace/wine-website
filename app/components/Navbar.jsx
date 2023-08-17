@@ -86,8 +86,7 @@ function Navbar() {
           </div>
         </div>
         <div className='social-media'>
-          <BsCart3 className='icon2' />
-          (0)
+          <Link href='/cart'>Cart (0)</Link>
           <Link className='pay-now' href='#trends'>
             {/* <BsPaypal className='icon3' size={20} /> */}
             Hot Deals
