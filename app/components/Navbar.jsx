@@ -5,6 +5,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { BsCart3, BsPaypal, BsSearch, BsTelephoneFill } from "react-icons/bs";
 import Logo from "../../public/images/logo.png";
 import Image from "next/image";
+import { useApi } from "../context/context";
 
 function Navbar() {
   const navLinks = [
@@ -39,6 +40,7 @@ function Navbar() {
   ];
 
   const [scrolled, setScrolled] = useState(false);
+  const { cart } = useApi();
 
   useEffect(() => {
     const triggerScroll = () => {
@@ -86,7 +88,7 @@ function Navbar() {
           </div>
         </div>
         <div className='social-media'>
-          <Link href='/cart'>Cart (0)</Link>
+          <Link href='/cart'>Cart({cart.length})</Link>
           <Link className='pay-now' href='#trends'>
             {/* <BsPaypal className='icon3' size={20} /> */}
             Hot Deals
