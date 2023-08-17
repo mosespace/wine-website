@@ -7,6 +7,7 @@ export const productContext = createContext();
 export function Context({ children }) {
   const [products, setProducts] = useState([]);
   const [categories, setCategories] = useState([]);
+  const [cart, setCart] = useState([]);
 
   useEffect(() => {
     async function fetchData() {
@@ -26,8 +27,16 @@ export function Context({ children }) {
     fetchData();
   }, []);
 
+  const addToCart = (product) => {
+    setCart((prevCart) => [...prevCart, product]);
+
+    if (!setCart) {
+      return alert("There is nothing in the cart");
+    }
+  };
+
   return (
-    <productContext.Provider value={{ products, categories }}>
+    <productContext.Provider value={{ products, categories, cart, addToCart }}>
       {children}
     </productContext.Provider>
   );
