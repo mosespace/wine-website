@@ -1,26 +1,28 @@
+"use client";
 import Hero from "./components/Hero";
 import CategoryListing from "./components/CategoryListing";
 import Products from "./components/Products";
 import MobileNav from "./components/MobileNav";
 import Faq from "./components/Faq";
 import CallToAction from "./components/CallToAction";
-import { getProducts } from "./api/products/route";
-import { getCategories } from "./api/categories/route";
+import { useApi } from "./context/context";
 
-export default async function Home() {
-  const categories = await getCategories();
+// import { getProducts } from "./api/products/route";
+// import { getCategories } from "./api/categories/route";
+
+export default function Home() {
+  const { products } = useApi();
   // console.log(categories);
 
-  const products = await getProducts();
-  // console.log(products);
+  const { categories } = useApi();
+  // console.log(categories);
 
   const featuredProducts = products.filter(
     (product) => product.isFeatured == true
   );
-
   // console.log(featuredProducts);
+
   const allSpirits = products.filter((product) => product.category_id == 2);
-  // console.log(spirits);
 
   const allWeddingWines = products.filter(
     (product) => product.category_id == 8
@@ -33,6 +35,7 @@ export default async function Home() {
       <MobileNav />
 
       {/* CATEGORY  LISTING */}
+      {/* <CategoryListing /> */}
       <CategoryListing data={categories} />
 
       {/* All Products */}
