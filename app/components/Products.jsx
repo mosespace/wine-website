@@ -1,10 +1,14 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { FiShare } from "react-icons/fi";
 import Link from "next/link";
+import { useApi } from "../context/context";
 
 export default function Products({ title, bg, data }) {
+  const { products } = useApi();
+  const { addToCart } = useApi();
   return (
     <section
       id='trends'
@@ -18,8 +22,8 @@ export default function Products({ title, bg, data }) {
       <div className='trending-grid'>
         {data?.splice(0, 5).map((product, i) => {
           return (
-            <Link key={i} href={`/product/${product.slug}`}>
-              <div className='card'>
+            <div className='card' key={i}>
+              <Link href={`/product/${product.slug}`}>
                 <div className='upper-icons'>
                   <div className='span-class'>
                     <span className='percentage'>-5%</span>
@@ -32,15 +36,15 @@ export default function Products({ title, bg, data }) {
                 </div>
                 <h2>{product.title}</h2>
                 <p>{product.brief_description}</p>
-                <div className='button-component'>
-                  <h3>$ {product.current_price}</h3>
-                  <div className='buy-now'>
-                    <AiOutlineShoppingCart />
-                    Buy
-                  </div>
-                </div>
+              </Link>
+              <div className='button-component'>
+                <h3>$ {product.current_price}</h3>
+                <button className='buy-now' onClick={() => addToCart(product)}>
+                  <AiOutlineShoppingCart />
+                  Add To cart
+                </button>
               </div>
-            </Link>
+            </div>
           );
         })}
       </div>
