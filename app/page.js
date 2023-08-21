@@ -6,15 +6,14 @@ import MobileNav from "./components/MobileNav";
 import Faq from "./components/Faq";
 import CallToAction from "./components/CallToAction";
 import { useApi } from "./context/context";
+import Skeleton from "./components/Skeleton";
 
 // import { getProducts } from "./api/products/route";
 // import { getCategories } from "./api/categories/route";
 
 export default function Home() {
-  const { products } = useApi();
+  const { categories, products, loading } = useApi();
   // console.log(categories);
-
-  const { categories } = useApi();
   // console.log(categories);
 
   const featuredProducts = products.filter(
@@ -39,9 +38,21 @@ export default function Home() {
       <CategoryListing data={categories} />
 
       {/* All Products */}
-      <Products title='Trending Wines' bg='#fca5a5' data={featuredProducts} />
-      <Products title='Spirits' bg='#f59e0b' data={allSpirits} />
-      <Products title='Wedding wines' bg='#a8a29e' data={allWeddingWines} />
+      {loading === true ? (
+        <div>
+          <Skeleton />
+        </div>
+      ) : (
+        <>
+          <Products
+            title='Trending Wines'
+            bg='#fca5a5'
+            data={featuredProducts}
+          />
+          <Products title='Spirits' bg='#f59e0b' data={allSpirits} />
+          <Products title='Wedding wines' bg='#a8a29e' data={allWeddingWines} />
+        </>
+      )}
 
       {/* FAQs */}
       <Faq />
