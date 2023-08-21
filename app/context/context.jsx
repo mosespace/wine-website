@@ -21,9 +21,6 @@ export function Context({ children }) {
         const categoriesResponse = await fetch("/api/categories");
         const categoriesData = await categoriesResponse.json();
         setCategories(categoriesData);
-
-        const storedCart = JSON.parse(localStorage.getItem("cartItems")) || [];
-        setCart(storedCart);
       } catch (error) {
         console.log("An error occurred while fetching data", error);
         // setLoading(false);
