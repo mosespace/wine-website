@@ -39,11 +39,11 @@ export function Context({ children }) {
   }, []);
 
   // Update local storage whenever cart items change
-  useEffect(() => {
-    localStorage.setItem("cartItems", JSON.stringify(cart));
-  }, [cart]);
+  // useEffect(() => {
+  //   localStorage.setItem("cartItems", JSON.stringify(cart));
+  // }, [cart]);
 
-  const retreviedData = JSON.parse(localStorage.getItem("cartItems"));
+  // const retreviedData = JSON.parse(localStorage.getItem("cartItems"));
   // console.log(retreviedData);
 
   const addToCart = (product) => {
